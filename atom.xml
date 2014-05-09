@@ -1,35 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://aribajahan.github.io/atom.xml" rel="self"/>
-  <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T12:12:40-04:00</updated>
-  <id>http://aribajahan.github.io/</id>
+  <title><![CDATA[Ariba Jahan]]></title>
+  <link href="aribajahan.github.io/atom.xml" rel="self"/>
+  <link href="aribajahan.github.io/"/>
+  <updated>2014-05-09T13:12:20-04:00</updated>
+  <id>aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Ariba Jahan]]></name>
+    <email><![CDATA[ariba.jahan@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[How to Customize Your Octopress]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/09/how-to-customize-your-octopress/"/>
+    <title type="html"><![CDATA[Customize Your Octopress]]></title>
+    <link href="aribajahan.github.io/blog/how-to-customize-your-octopress/"/>
     <updated>2014-05-09T12:07:58-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/09/how-to-customize-your-octopress</id>
-    <content type="html"><![CDATA[
+    <id>aribajahan.github.io/blog/how-to-customize-your-octopress</id>
+    <content type="html"><![CDATA[<p>What&rsquo;s great about Octopress is that all the flexibility is right in your local files. It&rsquo;s only a matter of spending the time to customize it.</p>
+
+<!--more-->
+
+
+<p>First customize the content:<br/>
+* Review and modify these <a href="http://octopress.org/docs/blogging/">options</a> <br/>
+* Basic and simple <a href="http://octopress.org/docs/configuring/">configurations</a><br/>
+* Create a custom <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">CNAME</a></p>
+
+<p>Even though Octopress installs the default theme, it&rsquo;s easy to create your own changes or install 3rd party themes.    <br/>
+* Here are the fields you can edit and customize the <a href="http://octopress.org/docs/theme/template/">theme</a><br/>
+* <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Third Party Themes</a> you can install on your blog. <br/>
+* <a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Third Party Plugins</a><br/>
+* <a href="https://coderwall.com/p/g53gqq">Coderwall: Make your own Theme</a><br/>
+* <a href="http://billpatrianakos.me/blog/2012/10/31/the-making-of-an-octopress-theme/">Bill Patrianakos: Making of an Octopress Theme</a></p>
+
+<br></br>
+
+
+<hr />
+
+<h3>How to customize the current theme:</h3>
+
+<p>Octopress themes are based on <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://www.shopify.com/">Shopify</a> template language <a href="http://liquidmarkup.org/">Liquid</a> (both written in Ruby). Learning some CSS and HTML will help you move forward.</p>
+
+<p>Themes are located in the <code>.themes/</code> folder and when you <code>rake install ["theme_name"]</code> it installs it to the folders:<code>sass</code> and <code>source</code>.
+This essentially means you have 3 copies of an installed theme: 1. public repo 2. in <code>octopress</code> 3. in <code>.themes/</code></p>
+
+<p>Now we will walk through what files to customize:</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Blogging on Octopress Workflow]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/09/blogging-on-octopress-workflow/"/>
+    <link href="aribajahan.github.io/blog/blogging-on-octopress-workflow/"/>
     <updated>2014-05-09T03:39:29-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/09/blogging-on-octopress-workflow</id>
+    <id>aribajahan.github.io/blog/blogging-on-octopress-workflow</id>
     <content type="html"><![CDATA[<p>Now that your blog is live, let&rsquo;s understand how Octopress works and start creating content.</p>
 
 <!--more-->
+
+
+<h3>Quick Summary of how to generate-deploy-commit</h3>
+
+<pre><code>
+    cd octopress
+    rake new_post["Title of post"]
+    rake generate 
+    rake deploy
+
+    git add .
+    git commit -am 'Message to commit'
+    git push origin source
+</code></pre>
 
 
 <h3>Understanding Github &lt;> Octopress</h3>
@@ -42,10 +85,7 @@
 
 <p>So your <code>master</code> branch on github.com is the &lsquo;_deploy&rsquo; folder.</p>
 
-<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a>, <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a>,</p>
-
-<br></br>
-
+<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a> and <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a></p>
 
 <hr />
 
@@ -91,9 +131,6 @@
 
 <p>So now you can see exactly what repo is the <code>source</code> and <code>master</code> and where they push. They are the 2 separate branches of your github page main repo.</p>
 
-<br></br>
-
-
 <hr />
 
 <h3>Blogging Workflow</h3>
@@ -106,50 +143,30 @@
 </ul>
 
 
-<br></br>
-
-
 <hr />
 
 <h3>Preview your Blog</h3>
 
-<ul>
-<li>In one terminal window. Keep this open:</li>
-</ul>
-
+<p>In one terminal window. Keep this open:</p>
 
 <pre><code>cd octopress
 rake preview</code></pre>
 
 
-<ul>
-<li>Launch browser: localhost:4000. You can keep an eye on your edits by refreshing this.</li>
-</ul>
-
-
-<br></br>
-
+<p>Launch internet browser: Type <code>localhost:4000</code> in the address. You can keep an eye on your edits by refreshing this as you test out your markdown skills.</p>
 
 <hr />
 
 <h3>Create new post</h3>
 
-<ul>
-<li>In another terminal window,</li>
-</ul>
-
+<p>In another terminal window,</p>
 
 <pre><code>rake new_post["Title of your post"]</code></pre>
 
 
-<ul>
-<li>This will create the markdown file in the folder: octopress/source/_posts/</li>
-<li>Now you can create your content here.</li>
-</ul>
-
-
-<br></br>
-
+<p>
+This will create the markdown file in the folder: <code>octopress/source/_posts/</code><br/>
+Now you can write your post in that markdown file.</p>
 
 <hr />
 
@@ -158,49 +175,34 @@ rake preview</code></pre>
 <pre><code>rake new_page[Title of your page]</code></pre>
 
 
-<ul>
-<li>This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</li>
-</ul>
-
-
-<br></br>
-
+<p>
+This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</p>
 
 <hr />
 
 <h3>Deploy</h3>
 
-<ul>
-<li>When you are satisfied, generate</li>
-</ul>
-
+<p>When you are satisfied, generate</p>
 
 <pre><code>rake generate
 rake deploy</code></pre>
 
 
-<ul>
-<li>If rake isn&rsquo;t working:</li>
-</ul>
+<p></p>
 
+<p>If rake isn&rsquo;t working:</p>
 
 <pre><code>build exec rake generate
 build exec rake deploy</code></pre>
 
 
-<ul>
-<li>and Commit:</li>
-</ul>
+<p></p>
 
+<p>Commit:</p>
 
 <pre><code>git add .
 git commit -am 'First commit'
 git push origin source</code></pre>
-
-
-
-
-<br></br>
 
 
 <hr />
@@ -208,19 +210,33 @@ git push origin source</code></pre>
 <h3>Further Troubleshooting:</h3>
 
 <ul>
-<li><p>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></p></li>
-<li><p>If you ever lose the source to your blog, check out <a href="http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/">his solution</a>.</p></li>
-<li><p>If you are interested in hosting your site on <a href="http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/">Amazon 3</a>.</p></li>
+<li>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></li>
+<li>If you ever lose the source to your blog, check out <a href="http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/">his solution</a>.</li>
+<li>If you are interested in hosting your site on <a href="http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/">Amazon 3</a>.</li>
 </ul>
 
+
+<h3>If you are looking for more resources, Check out:</h3>
+
+<p><a href="http://alblue.bandlem.com/2012/02/advantages-of-octopress.html">AlBlue&rsquo;s Advatanges of Octopress</a><br/>
+<a href="http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/">Why Octopressby Paul Rayner</a><br/>
+<a href="http://mattgemmell.com/blogging-with-octopress/">Matt Gemmell&rsquo;s Blogging with Octopress</a><br/>
+<a href="http://terry.im/wiki/terry/Octopress.html">Terry&rsquo;s Octopress Wiki</a><br/>
+<a href="http://hiltmon.com/blog/2013/04/17/18-months-of-octopress/">Hiltmon&rsquo;s 18 months of Octopress</a><br/>
+<a href="http://hiltmon.com/blog/2012/07/18/octopress-post-and-publish/">Hiltmon&rsquo;s script on isolating post for preview</a><br/>
+<a href="http://octopressthemes.com/faq/">Octopress Themes FAQ</a><br/>
+<a href="http://ryandeussing.com/">Ryan Deussing&rsquo;s Tutorials</a>
+<a href="http://chrissimpkins.github.io/octopus/">Octopus: A Jekyll+ Octopress Command line help</a><br/>
+<a href="http://www.viggiosoft.com/blog/blog/2011/09/28/setting-up-a-blog-with-octopress/">Octopress with Django</a>
+<a href="http://www.dinduks.com/yet-another-blog-that-migrates-to-octopress/">Migrate Wordpress to Octopress</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog/"/>
+    <link href="aribajahan.github.io/blog/create-your-own-octopress-blog/"/>
     <updated>2014-05-09T00:57:04-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog</id>
+    <id>aribajahan.github.io/blog/create-your-own-octopress-blog</id>
     <content type="html"><![CDATA[<p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
 <p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
@@ -400,14 +416,16 @@ git push origin source</code></pre>
 <li><p>In your browser, launch: localhost:4000</p></li>
 </ul>
 
+
+<p>Next, let&rsquo;s make the blog feel more like you.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/the-product-hub/"/>
+    <link href="aribajahan.github.io/blog/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/the-product-hub</id>
+    <id>aribajahan.github.io/blog/the-product-hub</id>
     <content type="html"><![CDATA[<p>As I am continuously increasing my knowledgebase, I am curating resources and sharing them here. This way others can learn about product management and what it takes to successfully create innovative products in technology.</p>
 
 <!--more-->
@@ -525,9 +543,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[Reading List]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/reading-list/"/>
+    <link href="aribajahan.github.io/blog/reading-list/"/>
     <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/reading-list</id>
+    <id>aribajahan.github.io/blog/reading-list</id>
     <content type="html"><![CDATA[<p>The beauty of this world is that it&rsquo;s evergrowing with information. It&rsquo;s hard to even keep up being aware of it, let alone absorb it all. My goal is to curate and share my reading list. Then post quotes and learnings that were meaningful to me.</p>
 
 <!--more-->
@@ -597,9 +615,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days/"/>
+    <link href="aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/"/>
     <updated>2014-04-25T04:26:50-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days</id>
+    <id>aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days</id>
     <content type="html"><![CDATA[<p>An exploration in to the NYC Open Data.</p>
 
 <!--more-->
@@ -736,19 +754,19 @@ Then, I wanted to take a look at the NYC and borough breakdown of proficiency le
   
   <entry>
     <title type="html"><![CDATA[Hello World: Late Saturday Night]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night/"/>
+    <link href="aribajahan.github.io/blog/hello-world-saturday-night/"/>
     <updated>2014-04-06T03:46:38-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night</id>
+    <id>aribajahan.github.io/blog/hello-world-saturday-night</id>
     <content type="html"><![CDATA[<p>It&rsquo;s 4 am and I&rsquo;m still trying to figure out how to work Github, Jekyll and Octopress.</p>
-
-<p>It&rsquo;s interesting how much more time I&rsquo;m willing to spend learning this &hellip; because it&rsquo;s an entire project.  I definitely think I&rsquo;m learning more this way than being on Codecademy.</p>
-
-<p> I should go to bed.</p>
 
 <!--more-->
 
 
 <p></p>
+
+<p>It&rsquo;s interesting how much more time I&rsquo;m willing to spend learning this &hellip; because it&rsquo;s an entire project.  I definitely think I&rsquo;m learning more this way than being on Codecademy.</p>
+
+<p> I should go to bed.</p>
 ]]></content>
   </entry>
   

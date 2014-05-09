@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Blogging | My Octopress Blog]]></title>
-  <link href="http://aribajahan.github.io/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T12:12:40-04:00</updated>
-  <id>http://aribajahan.github.io/</id>
+  <title><![CDATA[Category: Blogging | Ariba Jahan]]></title>
+  <link href="aribajahan.github.io/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="aribajahan.github.io/"/>
+  <updated>2014-05-09T13:12:20-04:00</updated>
+  <id>aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Ariba Jahan]]></name>
+    <email><![CDATA[ariba.jahan@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog/"/>
+    <link href="aribajahan.github.io/blog/create-your-own-octopress-blog/"/>
     <updated>2014-05-09T00:57:04-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog</id>
+    <id>aribajahan.github.io/blog/create-your-own-octopress-blog</id>
     <content type="html"><![CDATA[<p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
 <p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
@@ -197,6 +197,8 @@ git push origin source</code></pre>
 <li><p>In your browser, launch: localhost:4000</p></li>
 </ul>
 
+
+<p>Next, let&rsquo;s make the blog feel more like you.</p>
 ]]></content>
   </entry>
   

@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://aribajahan.github.io/blog/blogging-on-octopress-workflow">
+  <link rel="canonical" href="aribajahan.github.io/blog/blogging-on-octopress-workflow">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ariba Jahan" type="application/atom+xml">
@@ -80,6 +80,20 @@
 <!--more-->
 
 
+<h3>Quick Summary of how to generate-deploy-commit</h3>
+
+<pre><code>
+    cd octopress
+    rake new_post["Title of post"]
+    rake generate 
+    rake deploy
+
+    git add .
+    git commit -am 'Message to commit'
+    git push origin source
+</code></pre>
+
+
 <h3>Understanding Github &lt;> Octopress</h3>
 
 <p>Octopress is a blogging platform created by <a href="http://brandonmathis.com/">Brandon Mathis</a> which sits on top of Jekyll. Jekyll is a static site generator which uses the text files and converts them in to HTML.</p>
@@ -90,10 +104,7 @@
 
 <p>So your <code>master</code> branch on github.com is the &lsquo;_deploy&rsquo; folder.</p>
 
-<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a>, <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a>,</p>
-
-<br></br>
-
+<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a> and <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a></p>
 
 <hr />
 
@@ -139,9 +150,6 @@
 
 <p>So now you can see exactly what repo is the <code>source</code> and <code>master</code> and where they push. They are the 2 separate branches of your github page main repo.</p>
 
-<br></br>
-
-
 <hr />
 
 <h3>Blogging Workflow</h3>
@@ -154,50 +162,30 @@
 </ul>
 
 
-<br></br>
-
-
 <hr />
 
 <h3>Preview your Blog</h3>
 
-<ul>
-<li>In one terminal window. Keep this open:</li>
-</ul>
-
+<p>In one terminal window. Keep this open:</p>
 
 <pre><code>cd octopress
 rake preview</code></pre>
 
 
-<ul>
-<li>Launch browser: localhost:4000. You can keep an eye on your edits by refreshing this.</li>
-</ul>
-
-
-<br></br>
-
+<p>Launch internet browser: Type <code>localhost:4000</code> in the address. You can keep an eye on your edits by refreshing this as you test out your markdown skills.</p>
 
 <hr />
 
 <h3>Create new post</h3>
 
-<ul>
-<li>In another terminal window,</li>
-</ul>
-
+<p>In another terminal window,</p>
 
 <pre><code>rake new_post["Title of your post"]</code></pre>
 
 
-<ul>
-<li>This will create the markdown file in the folder: octopress/source/_posts/</li>
-<li>Now you can create your content here.</li>
-</ul>
-
-
-<br></br>
-
+<p>
+This will create the markdown file in the folder: <code>octopress/source/_posts/</code><br/>
+Now you can write your post in that markdown file.</p>
 
 <hr />
 
@@ -206,49 +194,34 @@ rake preview</code></pre>
 <pre><code>rake new_page[Title of your page]</code></pre>
 
 
-<ul>
-<li>This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</li>
-</ul>
-
-
-<br></br>
-
+<p>
+This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</p>
 
 <hr />
 
 <h3>Deploy</h3>
 
-<ul>
-<li>When you are satisfied, generate</li>
-</ul>
-
+<p>When you are satisfied, generate</p>
 
 <pre><code>rake generate
 rake deploy</code></pre>
 
 
-<ul>
-<li>If rake isn&rsquo;t working:</li>
-</ul>
+<p></p>
 
+<p>If rake isn&rsquo;t working:</p>
 
 <pre><code>build exec rake generate
 build exec rake deploy</code></pre>
 
 
-<ul>
-<li>and Commit:</li>
-</ul>
+<p></p>
 
+<p>Commit:</p>
 
 <pre><code>git add .
 git commit -am 'First commit'
 git push origin source</code></pre>
-
-
-
-
-<br></br>
 
 
 <hr />
@@ -256,11 +229,25 @@ git push origin source</code></pre>
 <h3>Further Troubleshooting:</h3>
 
 <ul>
-<li><p>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></p></li>
-<li><p>If you ever lose the source to your blog, check out <a href="http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/">his solution</a>.</p></li>
-<li><p>If you are interested in hosting your site on <a href="http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/">Amazon 3</a>.</p></li>
+<li>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></li>
+<li>If you ever lose the source to your blog, check out <a href="http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/">his solution</a>.</li>
+<li>If you are interested in hosting your site on <a href="http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/">Amazon 3</a>.</li>
 </ul>
 
+
+<h3>If you are looking for more resources, Check out:</h3>
+
+<p><a href="http://alblue.bandlem.com/2012/02/advantages-of-octopress.html">AlBlue&rsquo;s Advatanges of Octopress</a><br/>
+<a href="http://thepaulrayner.com/blog/2013/02/04/blogging-with-octopress-and-github-pages/">Why Octopressby Paul Rayner</a><br/>
+<a href="http://mattgemmell.com/blogging-with-octopress/">Matt Gemmell&rsquo;s Blogging with Octopress</a><br/>
+<a href="http://terry.im/wiki/terry/Octopress.html">Terry&rsquo;s Octopress Wiki</a><br/>
+<a href="http://hiltmon.com/blog/2013/04/17/18-months-of-octopress/">Hiltmon&rsquo;s 18 months of Octopress</a><br/>
+<a href="http://hiltmon.com/blog/2012/07/18/octopress-post-and-publish/">Hiltmon&rsquo;s script on isolating post for preview</a><br/>
+<a href="http://octopressthemes.com/faq/">Octopress Themes FAQ</a><br/>
+<a href="http://ryandeussing.com/">Ryan Deussing&rsquo;s Tutorials</a>
+<a href="http://chrissimpkins.github.io/octopus/">Octopus: A Jekyll+ Octopress Command line help</a><br/>
+<a href="http://www.viggiosoft.com/blog/blog/2011/09/28/setting-up-a-blog-with-octopress/">Octopress with Django</a>
+<a href="http://www.dinduks.com/yet-another-blog-that-migrates-to-octopress/">Migrate Wordpress to Octopress</a></p>
 
 
         <hr class="divider-short"/>
@@ -275,8 +262,8 @@ git push origin source</code></pre>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://aribajahan.github.io/blog/blogging-on-octopress-workflow/';
-        var disqus_url = 'http://aribajahan.github.io/blog/blogging-on-octopress-workflow/';
+        var disqus_identifier = 'aribajahan.github.io/blog/blogging-on-octopress-workflow/';
+        var disqus_url = 'aribajahan.github.io/blog/blogging-on-octopress-workflow/';
         var disqus_script = 'embed.js';
       
 
@@ -305,7 +292,7 @@ git push origin source</code></pre>
         
 
         
-          <a class="pull-right" href="/blog/how-to-customize-your-octopress/" title="Next Post: How to customize your Octopress">Next: How to customize your Octopress &raquo;</a>
+          <a class="pull-right" href="/blog/how-to-customize-your-octopress/" title="Next Post: Customize your Octopress">Next: Customize your Octopress &raquo;</a>
         
       </div>
     </div>
