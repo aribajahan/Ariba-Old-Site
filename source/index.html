@@ -11,7 +11,7 @@ layout: default
     <div class="home-landing her-row">
       <div class="container">
         <div class="row">
-          {% include custom/home_landing_row.html %}
+            {% include custom/home_landing_row.html %}
         </div>
       </div>
     </div>
@@ -21,7 +21,8 @@ layout: default
         {% for post in paginator.posts %}
           {% assign content = post.content %}
           <div class="row">
-            <div class="col-md-offset-3 col-md-6">
+            <div class="col-md-offset-2 col-md-8">
+              
               {% include article_listing.html %}
             </div>
           </div>
