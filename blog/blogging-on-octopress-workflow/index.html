@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Blogging on Octopress Workflow - Ariba Jahan</title>
+  <meta name="author" content="Ariba Jahan">
+
+  
+  <meta name="description" content="Blogging on Octopress Workflow written May 9th, 2014 Now that your blog is live, let&rsquo;s start creating content. Understanding Github &lt;> &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://aribajahan.github.io/blog/blogging-on-octopress-workflow">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ariba Jahan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49774879-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+  <body>
+    <a href="/" class="home-icon">
+      <img src="/images/home.png"/>
+    </a>
+
+    <article role="article" class="full-single-article">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1>Blogging on Octopress Workflow</h1>
+        <div class="meta">
+          written 
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2014-05-09T03:39:29-04:00" pubdate data-updated="true">May 9<span>th</span>, 2014</time>
+          
+
+
+        </div>
+        <p>Now that your blog is live, let&rsquo;s start creating content.</p>
+
+<!--more-->
+
+
+<h3>Understanding Github &lt;> Octopress</h3>
+
+<p>Octopress is a blogging platform created by <a href="http://brandonmathis.com/">Brandon Mathis</a> which sits on top of Jekyll. Jekyll is a static site generator which uses the text files and converts them in to HTML.</p>
+
+<p>Octopress repositories have two branches: <code>source</code> and <code>master</code>. The <code>source</code> branch has the files needed to generate your blog while the <code>master</code> branch has the blog itself.</p>
+
+<p>Right now, the source branch is where you cloned <code>Octopress</code> and it contains the <code>master</code> branch in the folder &lsquo;<em>deploy&rsquo;. So whenever you <code>git push origin source</code>,  the folders that begin with &ldquo;</em>&rdquo; are ignored. The <code>master</code> branch gets updated when you <code>rake deploy</code>.</p>
+
+<p>So your <code>master</code> branch on github.com is the &lsquo;_deploy&rsquo; folder.</p>
+
+<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a>, <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a>,</p>
+
+<br></br>
+
+
+<hr />
+
+<h3>Customizing your Octopress:</h3>
+
+<ul>
+<li>Review and modify these <a href="http://octopress.org/docs/blogging/">options</a></li>
+<li>Basic and simple <a href="http://octopress.org/docs/configuring/">configurations</a></li>
+<li>Here are the fields you can edit and customize the <a href="http://octopress.org/docs/theme/template/">theme</a></li>
+<li>Create a custom <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">CNAME</a></li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Third Party Themes</a> you can install on your blog.</li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Third Party Plugins</a></li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Blogging Workflow</h3>
+
+<ul>
+<li>Keep a markdown cheatsheet open: <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheatsheet1</a> or <a href="https://github.com/NeQuissimus/MarkdownByExample/wiki/MarkdownSyntax">Cheatsheet 2</a> or <a href="http://meta.stackexchange.com/questions/3792/how-to-nest-code-within-a-list-using-markdown">Code Nesting</a></li>
+<li>Keep your text editor, terminal, browser of choice on your dock.</li>
+<li>Open two tabs in terminal. One will be for previewing and the other for working.</li>
+<li>Bookmark these pages for further help: <a href="http://octopress.org/docs/">Octopress</a> , <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">Custom Domain for Octopress</a>, <a href="https://github.com/imathis/octopress">Octopress on Git</a>, <a href="http://octopress.org/docs/blogging/">Blogging Documentation</a></li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Preview your Blog</h3>
+
+<ul>
+<li>In one terminal window. Keep this open:</li>
+</ul>
+
+
+<pre><code>cd octopress
+rake preview</code></pre>
+
+
+<ul>
+<li>Launch browser: localhost:4000. You can keep an eye on your edits by refreshing this.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Create new post</h3>
+
+<ul>
+<li>In another terminal window,</li>
+</ul>
+
+
+<pre><code>rake new_post["Title of your post"]</code></pre>
+
+
+<ul>
+<li>This will create the markdown file in the folder: octopress/source/_posts/</li>
+<li>Now you can create your content here.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Create new page</h3>
+
+<pre><code>rake new_page[Title of your page]</code></pre>
+
+
+<ul>
+<li>This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Deploy</h3>
+
+<ul>
+<li>When you are satisfied, generate</li>
+</ul>
+
+
+<pre><code>rake generate
+rake deploy</code></pre>
+
+
+<ul>
+<li>If rake isn&rsquo;t working:</li>
+</ul>
+
+
+<pre><code>build exec rake generate
+build exec rake deploy</code></pre>
+
+
+<ul>
+<li>and Commit:</li>
+</ul>
+
+
+<pre><code>git add .
+git commit -am 'First commit'
+git push origin source</code></pre>
+
+
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Further Exploration:</h3>
+
+<ul>
+<li>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></li>
+</ul>
+
+
+
+        <hr class="divider-short"/>
+        
+        
+        <section>
+          <div class= "commentsection">Comments</>
+          <div id="disqus_thread" aria-live="polite">
+
+<script type="text/javascript">
+      var disqus_shortname = 'aribajahan';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://aribajahan.github.io/blog/blogging-on-octopress-workflow/';
+        var disqus_url = 'http://aribajahan.github.io/blog/blogging-on-octopress-workflow/';
+        var disqus_script = 'embed.js';
+      
+
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+</div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<hr class="divider-short"/>
+
+<div class="archive-link">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        
+          <a class="pull-left" href="/blog/create-your-own-octopress-blog/" title="Previous Post: Create your own Octopress blog">&laquo; Previous: Create your own Octopress blog</a>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="her-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+  <a href="/"><h4>Home</h4></a>
+</div>
+
+<div class="col-md-2">
+  <div class="social-icon-list">
+    <a title="Twitter" href="https://twitter.com/aribajahan"><img src="/images/glyphicons_social_31_twitter.png"/></a>
+    <a title="GitHub" href="https://github.com/aribajahan"><img src="/images/glyphicons_social_21_github.png"/></a>
+    <a title="E-Mail" href="mailto:ariba.jahan@gmail.com"><img src="/images/glyphicons_social_39_e-mail.png"/></a>
+    <a title="LinkedIn" href="https://linkedin.com/in/aribajahan"><img src="/images/glyphicons_social_17_linked_in.png"/></a>
+  </div>
+</div>
+
+<div class="pull-right">
+  <h4>Powered by <a href="http://octopress.org/">Octopress</a>. Theme by <a href="http://AdrianArtiles.com">Adrian</a>. Designed by <a href="http://aribajahan.github.io">Ariba Jahan</a>.</h4>
+</div>
+
+
+
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

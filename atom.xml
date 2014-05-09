@@ -4,7 +4,7 @@
   <title><![CDATA[Ariba Jahan]]></title>
   <link href="http://aribajahan.github.io/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T00:53:26-04:00</updated>
+  <updated>2014-05-09T11:12:24-04:00</updated>
   <id>http://aribajahan.github.io/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
@@ -12,6 +12,347 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging on Octopress Workflow]]></title>
+    <link href="http://aribajahan.github.io/blog/blogging-on-octopress-workflow/"/>
+    <updated>2014-05-09T03:39:29-04:00</updated>
+    <id>http://aribajahan.github.io/blog/blogging-on-octopress-workflow</id>
+    <content type="html"><![CDATA[<p>Now that your blog is live, let&rsquo;s start creating content.</p>
+
+<!--more-->
+
+
+<h3>Understanding Github &lt;> Octopress</h3>
+
+<p>Octopress is a blogging platform created by <a href="http://brandonmathis.com/">Brandon Mathis</a> which sits on top of Jekyll. Jekyll is a static site generator which uses the text files and converts them in to HTML.</p>
+
+<p>Octopress repositories have two branches: <code>source</code> and <code>master</code>. The <code>source</code> branch has the files needed to generate your blog while the <code>master</code> branch has the blog itself.</p>
+
+<p>Right now, the source branch is where you cloned <code>Octopress</code> and it contains the <code>master</code> branch in the folder &lsquo;<em>deploy&rsquo;. So whenever you <code>git push origin source</code>,  the folders that begin with &ldquo;</em>&rdquo; are ignored. The <code>master</code> branch gets updated when you <code>rake deploy</code>.</p>
+
+<p>So your <code>master</code> branch on github.com is the &lsquo;_deploy&rsquo; folder.</p>
+
+<p>Going through some GIT tutorials can be helpful: <a href="http://jnakano.com/blog/uncategorized/github-101-an-intro-to-git/">Git 101</a>, <a href="https://www.atlassian.com/git/workflows#!workflow-forking">Git Workflow</a>,</p>
+
+<br></br>
+
+
+<hr />
+
+<h3>Customizing your Octopress:</h3>
+
+<ul>
+<li>Review and modify these <a href="http://octopress.org/docs/blogging/">options</a></li>
+<li>Basic and simple <a href="http://octopress.org/docs/configuring/">configurations</a></li>
+<li>Here are the fields you can edit and customize the <a href="http://octopress.org/docs/theme/template/">theme</a></li>
+<li>Create a custom <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">CNAME</a></li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Third Party Themes</a> you can install on your blog.</li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Third Party Plugins</a></li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Blogging Workflow</h3>
+
+<ul>
+<li>Keep a markdown cheatsheet open: <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheatsheet1</a> or <a href="https://github.com/NeQuissimus/MarkdownByExample/wiki/MarkdownSyntax">Cheatsheet 2</a> or <a href="http://meta.stackexchange.com/questions/3792/how-to-nest-code-within-a-list-using-markdown">Code Nesting</a></li>
+<li>Keep your text editor, terminal, browser of choice on your dock.</li>
+<li>Open two tabs in terminal. One will be for previewing and the other for working.</li>
+<li>Bookmark these pages for further help: <a href="http://octopress.org/docs/">Octopress</a> , <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">Custom Domain for Octopress</a>, <a href="https://github.com/imathis/octopress">Octopress on Git</a>, <a href="http://octopress.org/docs/blogging/">Blogging Documentation</a></li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Preview your Blog</h3>
+
+<ul>
+<li>In one terminal window. Keep this open:</li>
+</ul>
+
+
+<pre><code>cd octopress
+rake preview</code></pre>
+
+
+<ul>
+<li>Launch browser: localhost:4000. You can keep an eye on your edits by refreshing this.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Create new post</h3>
+
+<ul>
+<li>In another terminal window,</li>
+</ul>
+
+
+<pre><code>rake new_post["Title of your post"]</code></pre>
+
+
+<ul>
+<li>This will create the markdown file in the folder: octopress/source/_posts/</li>
+<li>Now you can create your content here.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Create new page</h3>
+
+<pre><code>rake new_page[Title of your page]</code></pre>
+
+
+<ul>
+<li>This will create a folder with an index file. If you want this page to be on the navigation bar, you have to edit <code>/source/_includes/custom/navigation.html</code> file.</li>
+</ul>
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Deploy</h3>
+
+<ul>
+<li>When you are satisfied, generate</li>
+</ul>
+
+
+<pre><code>rake generate
+rake deploy</code></pre>
+
+
+<ul>
+<li>If rake isn&rsquo;t working:</li>
+</ul>
+
+
+<pre><code>build exec rake generate
+build exec rake deploy</code></pre>
+
+
+<ul>
+<li>and Commit:</li>
+</ul>
+
+
+<pre><code>git add .
+git commit -am 'First commit'
+git push origin source</code></pre>
+
+
+
+
+<br></br>
+
+
+<hr />
+
+<h3>Further Exploration:</h3>
+
+<ul>
+<li>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
+    <link href="http://aribajahan.github.io/blog/create-your-own-octopress-blog/"/>
+    <updated>2014-05-09T00:57:04-04:00</updated>
+    <id>http://aribajahan.github.io/blog/create-your-own-octopress-blog</id>
+    <content type="html"><![CDATA[<p>Here is the thing, I never even knew what github was. To get over that, I decided I would learn not only learn github but launch an octopress blog. So here is how you can make yours.</p>
+
+<p>Disclaimer: I had to rebuild this THREE times. So, definitely do not get discouraged (especially if you are a newbie, like me).</p>
+
+<!--more-->
+
+
+<h3>Workflow on Mac</h3>
+
+<ol>
+<li>Open Terminal <em>(I suggest you place a shortcut to Terminal on your dock)</em></li>
+<li>Download a text editor. I use <a href="http://www.sublimetext.com/">Sublime Text</a></li>
+<li>Install <a href="http://git-scm.com/downloads">Git</a> <em>Assuming you already have a <a href="github.com">github</a> account</em></li>
+</ol>
+
+
+<h3>Before you get started</h3>
+
+<ol>
+<li>Check Ruby version, on command line: <code>Ruby -v</code></li>
+<li>Check git version, on command line: <code>Git -v</code>
+The latest Ruby version is 2.1.1. If you have this or 1.9.3, you are set. If not, you have to install Ruby.
+This should tell you if you installed Git correctly.</li>
+</ol>
+
+
+<hr />
+
+<h3>Install RVM and Ruby</h3>
+
+<ul>
+<li>RVM is designed to help you manage the different Ruby versions and gems.</li>
+<li>It&rsquo;s pretty neat how many of these installations have been scripted which makes it easier for us to install it all.</li>
+</ul>
+
+
+<pre><code>curl -L get.rvm.io | bash -s stable</code></pre>
+
+
+<p></p>
+
+<ul>
+<li>Then, we need to make sure that RVM gets loaded in all of our shells (terminal windows).</li>
+<li>Type <code>nano .bash_profile</code></li>
+<li>The file will load up right in terminal. Scroll to the bottom and add the following text:</li>
+</ul>
+
+
+<pre><code>[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" </code></pre>
+
+
+<p>
+* Save this by pressing <code>ctrl+o</code> ,then <code>return</code>
+* Exit nano by pressing <code>ctrl+x</code></p>
+
+<ul>
+<li>Now, quit terminal and restart. To check if this worked <code>rvm -v</code></li>
+<li><p>This should show you the running version of RVM.</p></li>
+<li><p>Install Ruby <code>rvm install 2.1.1</code></p></li>
+<li><code>rvm use 2.1.1</code></li>
+<li><p>Should say >> Using /Users/aribajahan/.rvm/gems/ruby-2.1.1</p></li>
+<li><p>Check ruby version: <code>ruby -v</code></p></li>
+<li>Let&rsquo;s tell rvm to set this ruby as default: <code>rvm use 2.1.1 --default</code></li>
+</ul>
+
+
+<h3>Now let&rsquo;s setup all of our gemsets</h3>
+
+<ul>
+<li><code>rvm gemset create my-new-gemset</code></li>
+<li>Let&rsquo;s go to that gemset location:</li>
+</ul>
+
+
+<pre><code>cd /Users/aribajahan/.rvm/gems/ruby-2.1.1@my-new-gemset
+    ls</code></pre>
+
+
+<ul>
+<li>Let&rsquo;s default the ruby version: <code>rvm 2.1.1@my-new-gemset --default</code></li>
+<li>You should be in the gem directory. Now, <code>gem install nokogiri</code></li>
+<li><p>Let the gemset install.</p></li>
+<li><p>Now <code>cd gems</code></p></li>
+<li><p>Let&rsquo;s see how many gems got installed: <code>ls</code></p></li>
+<li><p>Now, let&rsquo;s install Rails.</p></li>
+</ul>
+
+
+<pre><code>rvm gemset create my-new-rails-setup</code></pre>
+
+
+<p>Should show: <code>ruby-2.1.1 - #gemset created /Users/aribajahan/.rvm/gems/ruby-2.1.1@my-new-rails-setup</code>
+<code>ruby-2.1.1 - #generating my-new-rails-setup wrappers.........</code></p>
+
+<ul>
+<li>This assigns this Ruby version to the gemset: <code>rvm 2.1.1@my-new-rails-setup</code></li>
+<li><p>Now, let&rsquo;s install Rails: <code>gem install rails</code>
+<em>This will take some time</em></p></li>
+<li><p>Let&rsquo;s see if it all installed: <code>cd gems</code></p></li>
+<li>Reveal the list of gems: <code>ls</code></li>
+<li>You should see far more gems now.</li>
+</ul>
+
+
+<h3>Ok, now we are ready to install Octopress</h3>
+
+<ul>
+<li>Create Octopress gem</li>
+<li><code>rvm gemset create octopress</code></li>
+<li><code>rvm 2.1.1@octopress</code></li>
+</ul>
+
+
+<h4>Clone and Install</h4>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress </code></pre>
+
+
+<p>
+<em>Note: you can name the folder anything instead of &lsquo;octopress&rsquo;.</em></p>
+
+<ul>
+<li>Now let&rsquo;s use rvmrc to assign Ruby to this folder.
+<code>&gt;.rvmrc
+echo "rvm use 2.1.1@octopress"&gt; .rvmrc</code></li>
+</ul>
+
+
+<pre><code>gem install bundler
+bundle install</code></pre>
+
+
+<ul>
+<li>Install the prepackaged theme: <code>rake install</code></li>
+</ul>
+
+
+<h3>Create Github page</h3>
+
+<ul>
+<li>Go to your github page, and create a new repository. I suggest you make it in the format: <code>username.github.io</code></li>
+<li><p>Make sure the default branch is set to master.</p></li>
+<li><p>Back on the terminal: <code>rake setup_github_pages</code></p></li>
+<li><p>When it prompts to add the link, make sure you add it in the form: <code>"http://username/username.github.io.git"</code></p></li>
+<li><p>It should end by telling you that you can now deploy to: &lsquo;<a href="https://github.com/aribajahan/aribajahan.github.io.git">https://github.com/aribajahan/aribajahan.github.io.git</a>&rsquo; with <code>rake deploy</code></p></li>
+<li><p>Then:</p></li>
+</ul>
+
+
+<pre><code>rake generate
+rake deploy</code></pre>
+
+
+<ul>
+<li><p>These two lines generates the packages and pushes it to the web.</p></li>
+<li><p>Now commit it:</p></li>
+</ul>
+
+
+<pre><code>git add .
+git commit -am 'First commit'
+git push origin source</code></pre>
+
+
+<ul>
+<li><p>It may take some time for the site to go live if it&rsquo;s the first time. In the meantime, you can run it remote to preview by:
+<code>rake preview</code></p></li>
+<li><p>In your browser, launch: localhost:4000</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
