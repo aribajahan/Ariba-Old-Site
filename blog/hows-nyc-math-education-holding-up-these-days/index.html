@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How's NYC Math Education Holding Up These Days? - Ariba Jahan</title>
+  <meta name="author" content="Ariba Jahan">
+
+  
+  <meta name="description" content="How's NYC Math Education Holding Up These Days? written Apr 25th, 2014 in Education, Math, NYC, OpenData, Socrata So, this is how it started&hellip &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ariba Jahan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49774879-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+  <body>
+    <a href="/" class="home-icon">
+      <img src="/images/home.png"/>
+    </a>
+
+    <article role="article" class="full-single-article">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>How's NYC Math Education Holding Up These Days?</h1>
+        <div class="meta">
+          written 
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2014-04-25T04:26:50-04:00" pubdate data-updated="true">Apr 25<span>th</span>, 2014</time>
+          
+
+in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/math/'>Math</a>, <a class='category' href='/blog/categories/nyc/'>NYC</a>, <a class='category' href='/blog/categories/opendata/'>OpenData</a>, <a class='category' href='/blog/categories/socrata/'>Socrata</a>
+  
+</span>
+
+
+        </div>
+        <h3>So, this is how it started&hellip;</h3>
+
+<p>The other night, I was helping my cousin out with her math homework. While I love that our interaction has gone beyond her showing me her instagram photos, I wasn&rsquo;t so happy about the content that she was learning.</p>
+
+<p>She is a sophomore in high school and she was struggling with basic trig that is usually covered in junior high school. We enjoyed some time reviewing all types of trig formulas and their relevance.</p>
+
+<!--more-->
+
+
+<p>When I was in the 7th grade (junior high school), I was doing 9th grade math. I was lucky to be at a junior high school that 1. even had advanced math 2. looked to provide that opportunity to many students and 3. cared about pushing our boundaries. That early exposure to math lead me to always seek out the impact math can have in other disciplines. In my case, it was the integration of Math and Biology that lead me to study as a Biomedical Engineer (focus on Biomechanics) in college.</p>
+
+<p>After we were done with her homework, I started wondering: <strong> How are the NYC students doing in Math these days? </strong></p>
+
+<hr />
+
+<h4>WHY do I want to know?</h4>
+
+<ul>
+    <li>Based on the results, I want to look in to neighborhood and school district breakdown of proficiency levels. </li>
+    <li>Then I&#8217;d like to work on a solution to help target those specific schools/districts that are performing below the level of proficiency that is set appropriate for their grade level.</li>
+</ul>
+
+
+<p></p>
+
+<hr />
+
+<h4>WHERE to find the answer?</h4>
+
+<ul>
+<li>Discovered that NYC Open Data has <a href="https://nycopendata.socrata.com/data?cat=education">Department of Education Data</a> dating back to 2006.</li>
+<li>So I decided to use that raw dataset to find the answer to my question.</li>
+<li>What is available? &ndash; NYS Math Exam level of proficiency for grades 3-8 between the years 2006-2011.</li>
+</ul>
+
+
+<hr />
+
+<h4>WHAT do I want to know?</h4>
+
+<ul>
+<li>What has been the trend in math performance in grades 3-8 between 2006- 2011?</li>
+<li>How does the math performance level look between the boroughs?</li>
+<li>Is there any difference between boys and girls?</li>
+<li>How does the entire NYC look as of 2011?</li>
+</ul>
+
+
+<hr />
+
+<h4>HOW did I do this? I followed the typical Data Science ACES workflow.</h4>
+
+<p>You can follow along. The python code is <a href="http://nbviewer.ipython.org/github/aribajahan/Projects/blob/master/NYCMath/AJ_Project_NYC_Math_06_11.ipynb?create=1">HERE</a></p>
+
+<p>I used ipython notebook because I wanted to keep an eye on how different syntax changes the output, and be able to provide myself notes.</p>
+
+<h3>1.Grab the dataset</h3>
+
+<p>Data Source: NYC Open Data Socrata <a href="https://nycopendata.socrata.com/data?cat=education">Department of Education Data</a><br/>
+Data format: .csv<br/>
+Data description: NYS Math Exam Proficiency Level Results for Grades 3-8, from 2006-2011.</p>
+
+<p>The proficiency levels are broken down into 4 categories:<br/>
+* Level 1: <strong>Well Below Proficient</strong> in standards to their grade. INsufficient for the expectations at this grade.<br/>
+* Level 2: <strong>Below Proficient</strong> in standards to their grade. Partial but sufficient for the expectations at this grade.  <br/>
+* Level 3: <strong>Proficient</strong> in standards for their grade. Sufficient for the expectations of this grade.<br/>
+* Level 4: <strong>Excel</strong> in standards for their grade. More than sufficient for the expectations of the grade.</p>
+
+<h3>2.Clean it up</h3>
+
+<p>For ease, I renamed some columns and deleted columns of no interest. Mainly, I cared about the boroughs, gender, years, numbers of students in different grades and proficiency levels.</p>
+
+<p>For this first run, I am interested in three spectrums: <br/>
+* Below in Standard Proficiency<br/>
+* Proficient in Standard<br/>
+* Excel in Standards</p>
+
+<h3>3.Explore it for global trends</h3>
+
+<p>Since this was my first time using pandas and matplotlib, I definitely experienced some challenges parsing through the data to get specific sorts and summaries.</p>
+
+<p>It was a matter of transferring what I&rsquo;d like to do in Excel to logically fit to the interface in python.</p>
+
+<p>Globally, I wanted to understand trends over time in the three main categories of proficiency levels.</p>
+
+<h4>Proficiency Level Trends Over Time</h4>
+
+<p><img src="http://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/TrendOverTime.png?raw=true" title="Performance Level Trends Over Time" alt="Performance Level Trends Over Time" />  <br/>
+<em>Due to the plot type, my year intervals wasn&rsquo;t showing up accurately. This still needs to be fixed</em>.<br/>
+<em>However, the years 2006-2011 are represented left to right, consecutively</em>.<br/>
+<em>According to this plot: Students performing below their grade level is increasing whereas students performing at their grade level is decreasing</em>.</p>
+
+<h3>4.Let&rsquo;s get a lil&#8217; deeper</h3>
+
+<p>First, I wanted to see if there was any gender differences in proficiency levels.<br/>
+Then, I wanted to take a look at the NYC and borough breakdown of proficiency levels for 2011.</p>
+
+<h4>Above Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsAbove.png?raw=%20true" width="750" alt="Above Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<h4>At Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsProf.png?raw=true" width="700" alt="At Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<h4>Below Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsBelow.png?raw=true" width="800" alt="Below Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<p>In the Gender Analysis, we see that there isn&rsquo;t a major difference between the number of boys and girls performing at above and at standard levels. However, more boys perform at below their standard level than girls.</p>
+
+<h4>2011 Snapshot: NYC Borough Breakdown</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoroughBreakdown.png?raw=true" width="700" alt="NYC Borough Breakdown" /></p>
+
+<p>Note, each borough is plotted within itself, not against the other boroughs (to eliminate skewed data). The highest number of students performing at below grade level is in the Bronx and Brooklyn. The highest number of students performing at above grade level is in Queens and Brooklyn. This requires a further dive to assess the neighborhood distribution.</p>
+
+<h4>NYC in 2011</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/NYCBreakdownPie.png?raw=true" alt="NYC in 2011" /></p>
+
+<p>It&rsquo;s a shame to see that the majority of the students in the NYC school system performed at below their standard proficiency level for their grade. But, this definitely requires further investigation.</p>
+
+<h4>What is next?</h4>
+
+<p>1.Break down the Below Standard Levels (1&amp; 2) to take a look at the difference between the two, if any. <br/>
+2.Deeper dive in to the borough breakdown by neighborhoods and districts. <br/>
+3.Create a plan to help target those districts and schools where students are performing at Proficiency Levels 1 &amp; 2.<br/>
+4.Explore proficiency level trends by grades.</p>
+
+
+        <hr class="divider-short"/>
+        
+        
+        <section>
+          <div class= "commentsection">Comments</>
+          <div id="disqus_thread" aria-live="polite">
+
+<script type="text/javascript">
+      var disqus_shortname = 'aribajahan';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/';
+        var disqus_url = 'http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/';
+        var disqus_script = 'embed.js';
+      
+
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+</div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+<hr class="divider-short"/>
+
+<div class="archive-link">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        
+          <a class="pull-left" href="/blog/hello-world-saturday-night/" title="Previous Post: Hello World: late Saturday Night">&laquo; Previous: Hello World: late Saturday Night</a>
+        
+
+        
+          <a class="pull-right" href="/blog/reading-list/" title="Next Post: Reading List">Next: Reading List &raquo;</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="her-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+  <a href="/"><h4>Home</h4></a>
+</div>
+
+<div class="col-md-2">
+  <div class="social-icon-list">
+    <a title="Twitter" href="https://twitter.com/aribajahan"><img src="/images/glyphicons_social_31_twitter.png"/></a>
+    <a title="GitHub" href="https://github.com/aribajahan"><img src="/images/glyphicons_social_21_github.png"/></a>
+    <a title="E-Mail" href="mailto:ariba.jahan@gmail.com"><img src="/images/glyphicons_social_39_e-mail.png"/></a>
+    <a title="LinkedIn" href="https://linkedin.com/in/aribajahan"><img src="/images/glyphicons_social_17_linked_in.png"/></a>
+  </div>
+</div>
+
+<div class="pull-right">
+  <h4>Powered by <a href="http://octopress.org/">Octopress</a>. Theme by <a href="http://AdrianArtiles.com">Adrian</a>. Designed by <a href="http://aribajahan.github.io">Ariba Jahan</a>.</h4>
+</div>
+
+
+
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

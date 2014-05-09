@@ -1,41 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Ariba Jahan]]></title>
   <link href="http://aribajahan.github.io/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T00:18:40-04:00</updated>
+  <updated>2014-05-09T00:32:41-04:00</updated>
   <id>http://aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Ariba Jahan]]></name>
+    <email><![CDATA[ariba.jahan@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[How to Create an Octopress Blog]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-blog/"/>
-    <updated>2014-05-08T21:18:28-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-blog</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Create an Octopress Bloh]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-bloh/"/>
-    <updated>2014-05-08T21:15:51-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-bloh</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/the-product-hub/"/>
+    <link href="http://aribajahan.github.io/blog/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/the-product-hub</id>
+    <id>http://aribajahan.github.io/blog/the-product-hub</id>
     <content type="html"><![CDATA[<h3>Product Books to read</h3>
 
 <h5>The Product Role &amp; Productivity</h5>
@@ -151,9 +133,9 @@
   
   <entry>
     <title type="html"><![CDATA[Reading List]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/reading-list/"/>
+    <link href="http://aribajahan.github.io/blog/reading-list/"/>
     <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/reading-list</id>
+    <id>http://aribajahan.github.io/blog/reading-list</id>
     <content type="html"><![CDATA[<h3>Lean</h3>
 
 <ul>
@@ -224,10 +206,147 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
+    <link href="http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/"/>
+    <updated>2014-04-25T04:26:50-04:00</updated>
+    <id>http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days</id>
+    <content type="html"><![CDATA[<h3>So, this is how it started&hellip;</h3>
+
+<p>The other night, I was helping my cousin out with her math homework. While I love that our interaction has gone beyond her showing me her instagram photos, I wasn&rsquo;t so happy about the content that she was learning.</p>
+
+<p>She is a sophomore in high school and she was struggling with basic trig that is usually covered in junior high school. We enjoyed some time reviewing all types of trig formulas and their relevance.</p>
+
+<!--more-->
+
+
+<p>When I was in the 7th grade (junior high school), I was doing 9th grade math. I was lucky to be at a junior high school that 1. even had advanced math 2. looked to provide that opportunity to many students and 3. cared about pushing our boundaries. That early exposure to math lead me to always seek out the impact math can have in other disciplines. In my case, it was the integration of Math and Biology that lead me to study as a Biomedical Engineer (focus on Biomechanics) in college.</p>
+
+<p>After we were done with her homework, I started wondering: <strong> How are the NYC students doing in Math these days? </strong></p>
+
+<hr />
+
+<h4>WHY do I want to know?</h4>
+
+<ul>
+    <li>Based on the results, I want to look in to neighborhood and school district breakdown of proficiency levels. </li>
+    <li>Then I&#8217;d like to work on a solution to help target those specific schools/districts that are performing below the level of proficiency that is set appropriate for their grade level.</li>
+</ul>
+
+
+<p></p>
+
+<hr />
+
+<h4>WHERE to find the answer?</h4>
+
+<ul>
+<li>Discovered that NYC Open Data has <a href="https://nycopendata.socrata.com/data?cat=education">Department of Education Data</a> dating back to 2006.</li>
+<li>So I decided to use that raw dataset to find the answer to my question.</li>
+<li>What is available? &ndash; NYS Math Exam level of proficiency for grades 3-8 between the years 2006-2011.</li>
+</ul>
+
+
+<hr />
+
+<h4>WHAT do I want to know?</h4>
+
+<ul>
+<li>What has been the trend in math performance in grades 3-8 between 2006- 2011?</li>
+<li>How does the math performance level look between the boroughs?</li>
+<li>Is there any difference between boys and girls?</li>
+<li>How does the entire NYC look as of 2011?</li>
+</ul>
+
+
+<hr />
+
+<h4>HOW did I do this? I followed the typical Data Science ACES workflow.</h4>
+
+<p>You can follow along. The python code is <a href="http://nbviewer.ipython.org/github/aribajahan/Projects/blob/master/NYCMath/AJ_Project_NYC_Math_06_11.ipynb?create=1">HERE</a></p>
+
+<p>I used ipython notebook because I wanted to keep an eye on how different syntax changes the output, and be able to provide myself notes.</p>
+
+<h3>1.Grab the dataset</h3>
+
+<p>Data Source: NYC Open Data Socrata <a href="https://nycopendata.socrata.com/data?cat=education">Department of Education Data</a><br/>
+Data format: .csv<br/>
+Data description: NYS Math Exam Proficiency Level Results for Grades 3-8, from 2006-2011.</p>
+
+<p>The proficiency levels are broken down into 4 categories:<br/>
+* Level 1: <strong>Well Below Proficient</strong> in standards to their grade. INsufficient for the expectations at this grade.<br/>
+* Level 2: <strong>Below Proficient</strong> in standards to their grade. Partial but sufficient for the expectations at this grade.  <br/>
+* Level 3: <strong>Proficient</strong> in standards for their grade. Sufficient for the expectations of this grade.<br/>
+* Level 4: <strong>Excel</strong> in standards for their grade. More than sufficient for the expectations of the grade.</p>
+
+<h3>2.Clean it up</h3>
+
+<p>For ease, I renamed some columns and deleted columns of no interest. Mainly, I cared about the boroughs, gender, years, numbers of students in different grades and proficiency levels.</p>
+
+<p>For this first run, I am interested in three spectrums: <br/>
+* Below in Standard Proficiency<br/>
+* Proficient in Standard<br/>
+* Excel in Standards</p>
+
+<h3>3.Explore it for global trends</h3>
+
+<p>Since this was my first time using pandas and matplotlib, I definitely experienced some challenges parsing through the data to get specific sorts and summaries.</p>
+
+<p>It was a matter of transferring what I&rsquo;d like to do in Excel to logically fit to the interface in python.</p>
+
+<p>Globally, I wanted to understand trends over time in the three main categories of proficiency levels.</p>
+
+<h4>Proficiency Level Trends Over Time</h4>
+
+<p><img src="http://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/TrendOverTime.png?raw=true" title="Performance Level Trends Over Time" alt="Performance Level Trends Over Time" />  <br/>
+<em>Due to the plot type, my year intervals wasn&rsquo;t showing up accurately. This still needs to be fixed</em>.<br/>
+<em>However, the years 2006-2011 are represented left to right, consecutively</em>.<br/>
+<em>According to this plot: Students performing below their grade level is increasing whereas students performing at their grade level is decreasing</em>.</p>
+
+<h3>4.Let&rsquo;s get a lil&#8217; deeper</h3>
+
+<p>First, I wanted to see if there was any gender differences in proficiency levels.<br/>
+Then, I wanted to take a look at the NYC and borough breakdown of proficiency levels for 2011.</p>
+
+<h4>Above Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsAbove.png?raw=%20true" width="750" alt="Above Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<h4>At Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsProf.png?raw=true" width="700" alt="At Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<h4>Below Standard Proficiency Level: Boys vs. Girls</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoysvsGirlsBelow.png?raw=true" width="800" alt="Below Standard Proficiency Level: Boys vs. Girls" /></p>
+
+<p>In the Gender Analysis, we see that there isn&rsquo;t a major difference between the number of boys and girls performing at above and at standard levels. However, more boys perform at below their standard level than girls.</p>
+
+<h4>2011 Snapshot: NYC Borough Breakdown</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/BoroughBreakdown.png?raw=true" width="700" alt="NYC Borough Breakdown" /></p>
+
+<p>Note, each borough is plotted within itself, not against the other boroughs (to eliminate skewed data). The highest number of students performing at below grade level is in the Bronx and Brooklyn. The highest number of students performing at above grade level is in Queens and Brooklyn. This requires a further dive to assess the neighborhood distribution.</p>
+
+<h4>NYC in 2011</h4>
+
+<p><img src="https://github.com/aribajahan/aribajahan.github.io/blob/master/images/hows-nyc-math-education-holding-up-these-days/NYCBreakdownPie.png?raw=true" alt="NYC in 2011" /></p>
+
+<p>It&rsquo;s a shame to see that the majority of the students in the NYC school system performed at below their standard proficiency level for their grade. But, this definitely requires further investigation.</p>
+
+<h4>What is next?</h4>
+
+<p>1.Break down the Below Standard Levels (1&amp; 2) to take a look at the difference between the two, if any. <br/>
+2.Deeper dive in to the borough breakdown by neighborhoods and districts. <br/>
+3.Create a plan to help target those districts and schools where students are performing at Proficiency Levels 1 &amp; 2.<br/>
+4.Explore proficiency level trends by grades.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hello World: Late Saturday Night]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night/"/>
+    <link href="http://aribajahan.github.io/blog/hello-world-saturday-night/"/>
     <updated>2014-04-06T03:46:38-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night</id>
+    <id>http://aribajahan.github.io/blog/hello-world-saturday-night</id>
     <content type="html"><![CDATA[<p>It&rsquo;s 4 am and I&rsquo;m still trying to figure out how to work Github, Jekyll and Octopress.</p>
 
 <p>It&rsquo;s interesting how much more time I&rsquo;m willing to spend learning this &hellip; because it&rsquo;s an entire project.  I definitely think I&rsquo;m learning more this way than being on Codecademy.</p>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Ux | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Ux | Ariba Jahan]]></title>
   <link href="http://aribajahan.github.io/blog/categories/ux/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T00:18:40-04:00</updated>
+  <updated>2014-05-09T00:32:41-04:00</updated>
   <id>http://aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Ariba Jahan]]></name>
+    <email><![CDATA[ariba.jahan@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/the-product-hub/"/>
+    <link href="http://aribajahan.github.io/blog/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/the-product-hub</id>
+    <id>http://aribajahan.github.io/blog/the-product-hub</id>
     <content type="html"><![CDATA[<h3>Product Books to read</h3>
 
 <h5>The Product Role &amp; Productivity</h5>
