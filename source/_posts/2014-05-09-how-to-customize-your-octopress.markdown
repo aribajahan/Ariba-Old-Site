@@ -11,7 +11,7 @@ What's great about Octopress is that all the flexibility is right in your local 
 First customize the content:  
 * Review and modify these [options](http://octopress.org/docs/blogging/)   
 * Basic and simple [configurations](http://octopress.org/docs/configuring/)  
-* Create a custom [CNAME](http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/)  
+* Create a custom [CNAME](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records)  
 
 Even though Octopress installs the default theme, it's easy to create your own changes or install 3rd party themes.      
 * Here are the fields you can edit and customize the [theme](http://octopress.org/docs/theme/template/)  
