@@ -6,13 +6,13 @@ comments: true
 categories: octopress, github, blogging
 ---
 
-Here is the thing, I never even knew what github was. To get over that, I decided I would learn not only learn github but launch an octopress blog. So here is how you can make yours. 
+To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn't familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for. 
 
-Disclaimer: I had to rebuild this THREE times. So, definitely do not get discouraged (especially if you are a newbie, like me). 
+Remember, if a newbie can rebuild this 3 times, you can definitely do this.
 
 <!--more-->
 
-###Workflow on Mac
+###Workflow on a Mac
 1. Open Terminal *(I suggest you place a shortcut to Terminal on your dock)*
 2. Download a text editor. I use [Sublime Text](http://www.sublimetext.com/)
 3. Install [Git](http://git-scm.com/downloads) *Assuming you already have a [github](github.com) account*
@@ -97,6 +97,10 @@ bundle install</code></pre>
 
 * When it prompts to add the link, make sure you add it in the form: `"http://username/username.github.io.git"`
 * It should end by telling you that you can now deploy to: 'https://github.com/aribajahan/aribajahan.github.io.git' with `rake deploy`
+
+What did this just do? This code renames the imathis/octopress from `origin` to `source`, adds your Github page repo as the default `origin` remote and renames your `master` branch to `source`. Then it also creates the directory: `_deploy/` and makes a git repo there (this acts like the master on your local device). Lastly, it adds your Github repo as the default `origin` remote for this new repo. 
+
+Now, everytime you do `rake generate` and `rake deploy`, the `master` branch that's in `_deploy/` is pushed to the `master` branch on your Github page repo. Then when you commit push to the `source` repo, it becomes the `source` branch of your Github page repo. 
 
 * Then:
 <pre><code>rake generate

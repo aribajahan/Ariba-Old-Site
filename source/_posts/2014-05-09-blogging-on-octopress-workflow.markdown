@@ -5,7 +5,7 @@ date: 2014-05-09 03:39:29 -0400
 comments: true
 categories: 
 ---
-Now that your blog is live, let's start creating content. 
+Now that your blog is live, let's understand how Octopress works and start creating content. 
 <!--more-->
 
 ###Understanding Github <> Octopress
@@ -21,13 +21,41 @@ Going through some GIT tutorials can be helpful: [Git 101](http://jnakano.com/bl
 
 <br></br>
 _______
-###Customizing your Octopress:
-+ Review and modify these [options](http://octopress.org/docs/blogging/) 
-+ Basic and simple [configurations](http://octopress.org/docs/configuring/)
-+ Here are the fields you can edit and customize the [theme](http://octopress.org/docs/theme/template/)
-+ Create a custom [CNAME](http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/)
-+ [Third Party Themes](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes) you can install on your blog. 
-+ [Third Party Plugins](https://github.com/imathis/octopress/wiki/3rd-party-plugins)
+###Understand your Repo:
+If you spend some time to understand this now, it'll help you troubleshoot and better understand exactly what happens. 
+<pre><code>
+	cd octopress #the repo where you cloned octopress
+	git remote show origin
+
+	* remote origin
+	Fetch URL: https://github.com/aribajahan/aribajahan.github.io.git
+  	Push  URL: https://github.com/aribajahan/aribajahan.github.io.git
+  	HEAD branch: master
+  	Remote branches:
+    master new (next fetch will store in remotes/origin)
+    source tracked
+  	Local branch configured for 'git pull':
+    source merges with remote master
+  	Local ref configured for 'git push':
+    source pushes to source (up to date)
+</code></pre>
+
+<pre><code>
+	cd octopress/_deploy/ #the repo within your source folder
+	git remote show origin
+
+	* remote origin
+  	Fetch URL: https://github.com/aribajahan/aribajahan.github.io.git
+  	Push  URL: https://github.com/aribajahan/aribajahan.github.io.git
+  	HEAD branch: master
+  	Remote branches:
+    master tracked
+    source tracked
+  	Local ref configured for 'git push':
+    master pushes to master (up to date)
+</code></pre>
+
+So now you can see exactly what repo is the `source` and `master` and where they push. They are the 2 separate branches of your github page main repo.
 
 
 <br></br>
@@ -78,8 +106,13 @@ git push origin source</code></pre>
 
 <br></br>
 _______
-###Further Exploration: 
-+ If you ever need to set up another computer to post to your existing blog, I'd follow [this](http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/), [this](http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view), [this](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/) or [this](http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/)
+###Further Troubleshooting: 
+- If you ever need to set up another computer to post to your existing blog, I'd follow [this](http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/), [this](http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view), [this](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/) or [this](http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/)
+
+- If you ever lose the source to your blog, check out [his solution](http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/).
+
+- If you are interested in hosting your site on [Amazon 3](http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/). 
+
 
 
 
