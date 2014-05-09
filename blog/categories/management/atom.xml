@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://aribajahan.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Management | My Octopress Blog]]></title>
+  <link href="http://aribajahan.github.io/blog/categories/management/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
   <updated>2014-05-09T00:18:40-04:00</updated>
   <id>http://aribajahan.github.io/</id>
@@ -12,24 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[How to Create an Octopress Blog]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-blog/"/>
-    <updated>2014-05-08T21:18:28-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-blog</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Create an Octopress Bloh]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-bloh/"/>
-    <updated>2014-05-08T21:15:51-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/08/how-to-create-an-octopress-bloh</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
@@ -146,98 +128,6 @@
 <li>Product specific blogs</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reading List]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/05/03/reading-list/"/>
-    <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/05/03/reading-list</id>
-    <content type="html"><![CDATA[<h3>Lean</h3>
-
-<ul>
-<li><a href="http://theleanstartup.com/book">The Lean Startup</a></li>
-<li><a href="http://www.amazon.com/Four-Steps-Epiphany-Steve-Blank/dp/0989200507?&amp;tag=rnwap-20">The Four Steps to the Epiphany</a></li>
-<li><a href="http://www.amazon.com/Lean-Analytics-Better-Startup-Faster-ebook/dp/B00AG66LTM/ref=pd_sim_kstore_3?ie=UTF8&amp;refRID=1HN6SX1PVNEDCDWQGGEC">Lean Analytics</a></li>
-<li><a href="http://www.amazon.com/Running-Lean-Iterate-Works-Series-ebook/dp/B006UKFFE0/ref=pd_sim_kstore_5?ie=UTF8&amp;refRID=1HN6SX1PVNEDCDWQGGEC">Running Lean</a></li>
-<li><a href="http://www.amazon.com/Lean-UX-Applying-Principles-Experience-ebook/dp/B0074KA0A4/ref=pd_sim_kstore_12?ie=UTF8&amp;refRID=1HN6SX1PVNEDCDWQGGEC">Lean UX</a></li>
-<li><a href="http://www.amazon.com/Lean-Enterprise-Corporations-Innovate-Startups-ebook/dp/B00J0VZS16/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1399094147&amp;sr=1-1&amp;keywords=lean+enterprise">The Lean Enterprise</a></li>
-</ul>
-
-
-<!--more-->
-
-
-<p></p>
-
-<ul>
-<li><a href="http://www.amazon.com/Imagine-Creativity-Works-Jonah-Lehrer-ebook/dp/B005MZN1HC/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1399092318&amp;sr=1-1&amp;keywords=imagine">Imagine: How Creativity Works &ndash; Neuroscience is the new Freakonomics</a></li>
-<li><a href="http://www.amazon.com/Freakonomics-Rev-Ed-Riddles-Modern-ebook/dp/B000MAH66Y/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1399094251&amp;sr=1-1&amp;keywords=freakonomics">Freakonomics</a></li>
-<li><a href="http://www.amazon.com/Think-Like-Freak-Authors-Freakonomics-ebook/dp/B00BATINVS/ref=sr_1_2?s=digital-text&amp;ie=UTF8&amp;qid=1399094251&amp;sr=1-2&amp;keywords=freakonomics">Think Like a Freak</a></li>
-<li><a href="http://www.amazon.com/Tipping-Point-Little-Things-Difference-ebook/dp/B000OT8GD0/ref=sr_1_7?s=digital-text&amp;ie=UTF8&amp;qid=1399094251&amp;sr=1-7&amp;keywords=freakonomics">The Tipping Point</a></li>
-<li><a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B00555X8OA/ref=pd_sim_kstore_1?ie=UTF8&amp;refRID=0KK6VH9WTK15ERARG7V1">Thinking, Fast and Slow</a></li>
-<li><a href="http://www.amazon.com/Blink-Power-Thinking-Without-ebook/dp/B000PAAH3K/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1399095376&amp;sr=1-1&amp;keywords=blink">Blink</a></li>
-<li><a href="http://www.amazon.com/The-Black-Swan-Improbable-Fragility-ebook/dp/B00139XTG4/ref=r_sim_8">The Black Swan</a></li>
-<li><a href="http://www.amazon.com/Principle-Other-Powerful-Laws-Nature-ebook/dp/B00D7IWMEY/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1399095582&amp;sr=1-1&amp;keywords=80+20+principle">The 80/20 Principle</a></li>
-</ul>
-
-
-<h3>Innovation</h3>
-
-<ul>
-<li><a href="http://www.amazon.com/The-Hard-Thing-About-Things-ebook/dp/B00DQ845EA/ref=pd_sim_kstore_3?ie=UTF8&amp;refRID=04H9XAVJEJHTTFJP90Z2">The Hard Thing About Hard Things</a></li>
-<li><a href="http://www.amazon.com/The-100-Startup-Reinvent-ebook/dp/B0067TGSOK/ref=sr_1_3?ie=UTF8&amp;qid=1340634221&amp;sr=8-3&amp;keywords=%24100+startup">$100 Startup</a></li>
-<li><a href="http://www.amazon.com/The-Founders-Dilemmas-Anticipating-Entrepreneurship-ebook/dp/B007AIXKUM/ref=pd_sim_kstore_8?ie=UTF8&amp;refRID=1HN6SX1PVNEDCDWQGGEC">The Founder&rsquo;s Dilemmas</a></li>
-<li><a href="http://claytonchristensen.com/books/the-innovators-dilemma"> The Innovator&rsquo;s Dilemma</a></li>
-<li><a href="http://www.amazon.com/Innovators-DNA-Mastering-Skills-Disruptive-ebook/dp/B0054KBLRC/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1399093978&amp;sr=1-1&amp;keywords=innovators+dna">The Innovator&rsquo;s DNA</a></li>
-<li><a href="http://www.amazon.com/The-Innovators-Solution-Sustaining-Successful-ebook/dp/B00E257S7C/ref=pd_sim_kstore_1?ie=UTF8&amp;refRID=1SX5CSHN221TDVAFFFE0">The Innovator&rsquo;s Solution</a></li>
-<li><a href="http://www.accenture.com/microsites/bigbangdisruption/Pages/home.aspx">Big Bang Disruption</a></li>
-<li><a href="http://books.google.com/books?isbn=0071760148">Entrepreneurial DNA</a></li>
-</ul>
-
-
-<h3>Customer</h3>
-
-<ul>
-<li><a href="http://www.amazon.com/Hooked-How-Build-Habit-Forming-Products-ebook/dp/B00HJ4A43S/ref=pd_sim_kstore_10?ie=UTF8&amp;refRID=0KZ9WWPWCNHPMAN2KQM2">Hooked: How to Build Habit-Forming Products</a></li>
-<li><a href="http://www.amazon.com/Contagious-Why-Things-Catch-On-ebook/dp/B008J4GQKW/ref=pd_sim_kstore_13?ie=UTF8&amp;refRID=1KWSFTZ4Z936DVBMQMR3">Contagious: Why Things Catch On</a></li>
-<li><a href="http://www.amazon.com/Predictably-Irrational-Revised-Expanded-Edition-ebook/dp/B002C949KE/ref=zg_bs_154969011_5">Predictably Irrational</a></li>
-<li><a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">Don&rsquo;t Make Me Think</a></li>
-</ul>
-
-
-<h3>Life and Career</h3>
-
-<ul>
-<li><a href="http://www.amazon.com/Happiness-Advantage-Principles-Psychology-Performance-ebook/dp/B003F3PMYI/ref=sr_1_1_ha?s=digital-text&amp;ie=UTF8&amp;qid=1399093293&amp;sr=1-1&amp;keywords=the+happiness+advantage">The Happiness Advantage</a></li>
-<li><a href="http://www.amazon.com/The-Power-Habit-What-Business-ebook/dp/B0055PGUYU/ref=pd_sim_b_1?ie=UTF8&amp;refRID=16HKEET6RM6PW0WM77JX">The Power of Habit</a></li>
-<li><a href="http://www.amazon.com/The-2-Hour-Job-Search-Technology/dp/1607741709/ref=sr_1_cc_1?s=aps&amp;ie=UTF8&amp;qid=1399094769&amp;sr=1-1-catcorr&amp;keywords=the+2+hour+job+interview">The 2 hour Job Search</a></li>
-<li><a href="http://www.amazon.com/Lean-Women-Work-Will-Lead-ebook/dp/B009LMTDL0/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1399094959&amp;sr=1-1&amp;keywords=lean+in">Lean IN</a></li>
-<li><a href="http://www.amazon.com/Thrive-Redefining-Success-Creating-Well-Being-ebook/dp/B00FIN2HMS/ref=pd_sim_b_5?ie=UTF8&amp;refRID=0W84QKM6HG8E1ABBDZZ7">Thrive</a></li>
-<li><a href="http://www.amazon.com/StrengthsFinder-2-0-Tom-Rath/dp/159562015X/ref=pd_sim_b_13?ie=UTF8&amp;refRID=19P11CN40KJV7XNEE15V">Strengthsfinder 2.0</a></li>
-<li><a href="http://www.thestartupofyou.com/">The Startup of You</a></li>
-<li><a href="">7 Habits of Highly Effective People</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World: Late Saturday Night]]></title>
-    <link href="http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night/"/>
-    <updated>2014-04-06T03:46:38-04:00</updated>
-    <id>http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s 4 am and I&rsquo;m still trying to figure out how to work Github, Jekyll and Octopress.</p>
-
-<p>It&rsquo;s interesting how much more time I&rsquo;m willing to spend learning this &hellip; because it&rsquo;s an entire project.  I definitely think I&rsquo;m learning more this way than being on Codecademy.</p>
-
-<p> I should go to bed.</p>
-
-<!--more-->
-
-
-<p></p>
 ]]></content>
   </entry>
   
