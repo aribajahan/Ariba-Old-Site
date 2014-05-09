@@ -8,10 +8,9 @@ categories: octopress, github, blogging
 
 To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn't familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for. 
 
-Remember, if a newbie can rebuild this 3 times, you can definitely do this.
+Remember, if a newbie can rebuild this 3 times, you can definitely do this.  
 
 <!--more-->
-
 ###Workflow on a Mac
 1. Open Terminal *(I suggest you place a shortcut to Terminal on your dock)*
 2. Download a text editor. I use [Sublime Text](http://www.sublimetext.com/)
@@ -116,5 +115,7 @@ git push origin source</code></pre>
 `rake preview`
 
 * In your browser, launch: localhost:4000
+
+Next, let's make the blog feel more like you. 
 
 

@@ -8,8 +8,10 @@ categories:
 
 It's 4 am and I'm still trying to figure out how to work Github, Jekyll and Octopress.
 
+<!--more--> 
+
 It's interesting how much more time I'm willing to spend learning this ... because it's an entire project.  I definitely think I'm learning more this way than being on Codecademy. 
 
  I should go to bed.
-<!--more--> 
+
 
