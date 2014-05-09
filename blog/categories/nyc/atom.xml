@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: NYC | Ariba Jahan]]></title>
-  <link href="aribajahan.com/blog/categories/nyc/atom.xml" rel="self"/>
-  <link href="aribajahan.com/"/>
-  <updated>2014-05-09T15:54:37-04:00</updated>
-  <id>aribajahan.com/</id>
+  <link href="http://aribajahan.com/blog/categories/nyc/atom.xml" rel="self"/>
+  <link href="http://aribajahan.com/"/>
+  <updated>2014-05-09T15:57:10-04:00</updated>
+  <id>http://aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
     <email><![CDATA[ariba.jahan@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
-    <link href="aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days/"/>
+    <link href="http://aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days/"/>
     <updated>2014-04-25T04:26:50-04:00</updated>
-    <id>aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days</id>
+    <id>http://aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days</id>
     <content type="html"><![CDATA[<p>An exploration in to the NYC Open Data.</p>
 
 <!--more-->

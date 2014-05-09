@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Readinglist | Ariba Jahan]]></title>
-  <link href="aribajahan.com/blog/categories/readinglist/atom.xml" rel="self"/>
-  <link href="aribajahan.com/"/>
-  <updated>2014-05-09T15:54:37-04:00</updated>
-  <id>aribajahan.com/</id>
+  <link href="http://aribajahan.com/blog/categories/readinglist/atom.xml" rel="self"/>
+  <link href="http://aribajahan.com/"/>
+  <updated>2014-05-09T15:57:10-04:00</updated>
+  <id>http://aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
     <email><![CDATA[ariba.jahan@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Reading List]]></title>
-    <link href="aribajahan.com/blog/reading-list/"/>
+    <link href="http://aribajahan.com/blog/reading-list/"/>
     <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>aribajahan.com/blog/reading-list</id>
+    <id>http://aribajahan.com/blog/reading-list</id>
     <content type="html"><![CDATA[<p>The beauty of this world is that it&rsquo;s evergrowing with information. It&rsquo;s hard to even keep up being aware of it, let alone absorb it all. My goal is to curate and share my reading list. Then post quotes and learnings that were meaningful to me.</p>
 
 <!--more-->

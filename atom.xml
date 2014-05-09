@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Ariba Jahan]]></title>
-  <link href="aribajahan.com/atom.xml" rel="self"/>
-  <link href="aribajahan.com/"/>
-  <updated>2014-05-09T15:54:37-04:00</updated>
-  <id>aribajahan.com/</id>
+  <link href="http://aribajahan.com/atom.xml" rel="self"/>
+  <link href="http://aribajahan.com/"/>
+  <updated>2014-05-09T15:57:10-04:00</updated>
+  <id>http://aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
     <email><![CDATA[ariba.jahan@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Customize Your Octopress]]></title>
-    <link href="aribajahan.com/blog/how-to-customize-your-octopress/"/>
+    <link href="http://aribajahan.com/blog/how-to-customize-your-octopress/"/>
     <updated>2014-05-09T12:07:58-04:00</updated>
-    <id>aribajahan.com/blog/how-to-customize-your-octopress</id>
+    <id>http://aribajahan.com/blog/how-to-customize-your-octopress</id>
     <content type="html"><![CDATA[<p>What&rsquo;s great about Octopress is that all the flexibility is right in your local files. It&rsquo;s only a matter of spending the time to customize it.</p>
 
 <!--more-->
@@ -53,9 +53,9 @@ This essentially means you have 3 copies of an installed theme: 1. public repo 2
   
   <entry>
     <title type="html"><![CDATA[Blogging on Octopress Workflow]]></title>
-    <link href="aribajahan.com/blog/blogging-on-octopress-workflow/"/>
+    <link href="http://aribajahan.com/blog/blogging-on-octopress-workflow/"/>
     <updated>2014-05-09T03:39:29-04:00</updated>
-    <id>aribajahan.com/blog/blogging-on-octopress-workflow</id>
+    <id>http://aribajahan.com/blog/blogging-on-octopress-workflow</id>
     <content type="html"><![CDATA[<p>Now that your blog is live, let&rsquo;s understand how Octopress works and start creating content.</p>
 
 <!--more-->
@@ -234,9 +234,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
-    <link href="aribajahan.com/blog/create-your-own-octopress-blog/"/>
+    <link href="http://aribajahan.com/blog/create-your-own-octopress-blog/"/>
     <updated>2014-05-09T00:57:04-04:00</updated>
-    <id>aribajahan.com/blog/create-your-own-octopress-blog</id>
+    <id>http://aribajahan.com/blog/create-your-own-octopress-blog</id>
     <content type="html"><![CDATA[<p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
 <p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
@@ -423,9 +423,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="aribajahan.com/blog/the-product-hub/"/>
+    <link href="http://aribajahan.com/blog/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>aribajahan.com/blog/the-product-hub</id>
+    <id>http://aribajahan.com/blog/the-product-hub</id>
     <content type="html"><![CDATA[<p>As I am continuously increasing my knowledgebase, I am curating resources and sharing them here. This way others can learn about product management and what it takes to successfully create innovative products in technology.</p>
 
 <!--more-->
@@ -543,9 +543,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[Reading List]]></title>
-    <link href="aribajahan.com/blog/reading-list/"/>
+    <link href="http://aribajahan.com/blog/reading-list/"/>
     <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>aribajahan.com/blog/reading-list</id>
+    <id>http://aribajahan.com/blog/reading-list</id>
     <content type="html"><![CDATA[<p>The beauty of this world is that it&rsquo;s evergrowing with information. It&rsquo;s hard to even keep up being aware of it, let alone absorb it all. My goal is to curate and share my reading list. Then post quotes and learnings that were meaningful to me.</p>
 
 <!--more-->
@@ -615,9 +615,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
-    <link href="aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days/"/>
+    <link href="http://aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days/"/>
     <updated>2014-04-25T04:26:50-04:00</updated>
-    <id>aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days</id>
+    <id>http://aribajahan.com/blog/hows-nyc-math-education-holding-up-these-days</id>
     <content type="html"><![CDATA[<p>An exploration in to the NYC Open Data.</p>
 
 <!--more-->
@@ -754,9 +754,9 @@ Then, I wanted to take a look at the NYC and borough breakdown of proficiency le
   
   <entry>
     <title type="html"><![CDATA[Hello World: Late Saturday Night]]></title>
-    <link href="aribajahan.com/blog/hello-world-saturday-night/"/>
+    <link href="http://aribajahan.com/blog/hello-world-saturday-night/"/>
     <updated>2014-04-06T03:46:38-04:00</updated>
-    <id>aribajahan.com/blog/hello-world-saturday-night</id>
+    <id>http://aribajahan.com/blog/hello-world-saturday-night</id>
     <content type="html"><![CDATA[<p>It&rsquo;s 4 am and I&rsquo;m still trying to figure out how to work Github, Jekyll and Octopress.</p>
 
 <!--more-->
