@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: aribajahan.github.io/sitemap.xml 
+Sitemap: aribajahan.com/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Pm | Ariba Jahan]]></title>
-  <link href="aribajahan.github.io/blog/categories/pm/atom.xml" rel="self"/>
-  <link href="aribajahan.github.io/"/>
-  <updated>2014-05-09T14:57:22-04:00</updated>
-  <id>aribajahan.github.io/</id>
+  <link href="aribajahan.com/blog/categories/pm/atom.xml" rel="self"/>
+  <link href="aribajahan.com/"/>
+  <updated>2014-05-09T15:54:37-04:00</updated>
+  <id>aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
     <email><![CDATA[ariba.jahan@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="aribajahan.github.io/blog/the-product-hub/"/>
+    <link href="aribajahan.com/blog/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>aribajahan.github.io/blog/the-product-hub</id>
+    <id>aribajahan.com/blog/the-product-hub</id>
     <content type="html"><![CDATA[<p>As I am continuously increasing my knowledgebase, I am curating resources and sharing them here. This way others can learn about product management and what it takes to successfully create innovative products in technology.</p>
 
 <!--more-->

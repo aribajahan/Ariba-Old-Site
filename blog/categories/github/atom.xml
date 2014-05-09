@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Github, | Ariba Jahan]]></title>
-  <link href="aribajahan.github.io/blog/categories/github/atom.xml" rel="self"/>
-  <link href="aribajahan.github.io/"/>
-  <updated>2014-05-09T14:57:22-04:00</updated>
-  <id>aribajahan.github.io/</id>
+  <link href="aribajahan.com/blog/categories/github/atom.xml" rel="self"/>
+  <link href="aribajahan.com/"/>
+  <updated>2014-05-09T15:54:37-04:00</updated>
+  <id>aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
     <email><![CDATA[ariba.jahan@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
-    <link href="aribajahan.github.io/blog/create-your-own-octopress-blog/"/>
+    <link href="aribajahan.com/blog/create-your-own-octopress-blog/"/>
     <updated>2014-05-09T00:57:04-04:00</updated>
-    <id>aribajahan.github.io/blog/create-your-own-octopress-blog</id>
+    <id>aribajahan.com/blog/create-your-own-octopress-blog</id>
     <content type="html"><![CDATA[<p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
 <p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
