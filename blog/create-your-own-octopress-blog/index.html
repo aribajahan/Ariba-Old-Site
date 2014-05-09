@@ -13,7 +13,7 @@
   <meta name="author" content="Ariba Jahan">
 
   
-  <meta name="description" content="Create Your Own Octopress Blog written May 9th, 2014 in blogging, github,, octopress, Here is the thing, I never even knew what github was. To get &hellip;">
+  <meta name="description" content="Create Your Own Octopress Blog written May 9th, 2014 in blogging, github,, octopress, To be honest, I never even knew what github was. To fix that, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,14 +82,14 @@ in
 
 
         </div>
-        <p>Here is the thing, I never even knew what github was. To get over that, I decided I would learn not only learn github but launch an octopress blog. So here is how you can make yours.</p>
+        <p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
-<p>Disclaimer: I had to rebuild this THREE times. So, definitely do not get discouraged (especially if you are a newbie, like me).</p>
+<p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
 
 <!--more-->
 
 
-<h3>Workflow on Mac</h3>
+<h3>Workflow on a Mac</h3>
 
 <ol>
 <li>Open Terminal <em>(I suggest you place a shortcut to Terminal on your dock)</em></li>
@@ -227,8 +227,16 @@ bundle install</code></pre>
 <li><p>Make sure the default branch is set to master.</p></li>
 <li><p>Back on the terminal: <code>rake setup_github_pages</code></p></li>
 <li><p>When it prompts to add the link, make sure you add it in the form: <code>"http://username/username.github.io.git"</code></p></li>
-<li><p>It should end by telling you that you can now deploy to: &lsquo;<a href="https://github.com/aribajahan/aribajahan.github.io.git">https://github.com/aribajahan/aribajahan.github.io.git</a>&rsquo; with <code>rake deploy</code></p></li>
-<li><p>Then:</p></li>
+<li>It should end by telling you that you can now deploy to: &lsquo;<a href="https://github.com/aribajahan/aribajahan.github.io.git">https://github.com/aribajahan/aribajahan.github.io.git</a>&rsquo; with <code>rake deploy</code></li>
+</ul>
+
+
+<p>What did this just do? This code renames the imathis/octopress from <code>origin</code> to <code>source</code>, adds your Github page repo as the default <code>origin</code> remote and renames your <code>master</code> branch to <code>source</code>. Then it also creates the directory: <code>_deploy/</code> and makes a git repo there (this acts like the master on your local device). Lastly, it adds your Github repo as the default <code>origin</code> remote for this new repo.</p>
+
+<p>Now, everytime you do <code>rake generate</code> and <code>rake deploy</code>, the <code>master</code> branch that&rsquo;s in <code>_deploy/</code> is pushed to the <code>master</code> branch on your Github page repo. Then when you commit push to the <code>source</code> repo, it becomes the <code>source</code> branch of your Github page repo.</p>
+
+<ul>
+<li>Then:</li>
 </ul>
 
 

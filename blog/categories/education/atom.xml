@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Education | Ariba Jahan]]></title>
+  <title><![CDATA[Category: Education | My Octopress Blog]]></title>
   <link href="http://aribajahan.github.io/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T11:12:24-04:00</updated>
+  <updated>2014-05-09T12:12:40-04:00</updated>
   <id>http://aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Ariba Jahan]]></name>
-    <email><![CDATA[ariba.jahan@gmail.com]]></email>
+    <name><![CDATA[Your Name]]></name>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
-    <link href="http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/"/>
+    <link href="http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days/"/>
     <updated>2014-04-25T04:26:50-04:00</updated>
-    <id>http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days</id>
+    <id>http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days</id>
     <content type="html"><![CDATA[<p>An exploration in to the NYC Open Data.</p>
 
 <!--more-->

@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ariba Jahan]]></title>
+  <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://aribajahan.github.io/atom.xml" rel="self"/>
   <link href="http://aribajahan.github.io/"/>
-  <updated>2014-05-09T11:12:24-04:00</updated>
+  <updated>2014-05-09T12:12:40-04:00</updated>
   <id>http://aribajahan.github.io/</id>
   <author>
-    <name><![CDATA[Ariba Jahan]]></name>
-    <email><![CDATA[ariba.jahan@gmail.com]]></email>
+    <name><![CDATA[Your Name]]></name>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
+    <title type="html"><![CDATA[How to Customize Your Octopress]]></title>
+    <link href="http://aribajahan.github.io/blog/2014/05/09/how-to-customize-your-octopress/"/>
+    <updated>2014-05-09T12:07:58-04:00</updated>
+    <id>http://aribajahan.github.io/blog/2014/05/09/how-to-customize-your-octopress</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Blogging on Octopress Workflow]]></title>
-    <link href="http://aribajahan.github.io/blog/blogging-on-octopress-workflow/"/>
+    <link href="http://aribajahan.github.io/blog/2014/05/09/blogging-on-octopress-workflow/"/>
     <updated>2014-05-09T03:39:29-04:00</updated>
-    <id>http://aribajahan.github.io/blog/blogging-on-octopress-workflow</id>
-    <content type="html"><![CDATA[<p>Now that your blog is live, let&rsquo;s start creating content.</p>
+    <id>http://aribajahan.github.io/blog/2014/05/09/blogging-on-octopress-workflow</id>
+    <content type="html"><![CDATA[<p>Now that your blog is live, let&rsquo;s understand how Octopress works and start creating content.</p>
 
 <!--more-->
 
@@ -40,17 +49,47 @@
 
 <hr />
 
-<h3>Customizing your Octopress:</h3>
+<h3>Understand your Repo:</h3>
 
-<ul>
-<li>Review and modify these <a href="http://octopress.org/docs/blogging/">options</a></li>
-<li>Basic and simple <a href="http://octopress.org/docs/configuring/">configurations</a></li>
-<li>Here are the fields you can edit and customize the <a href="http://octopress.org/docs/theme/template/">theme</a></li>
-<li>Create a custom <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">CNAME</a></li>
-<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Third Party Themes</a> you can install on your blog.</li>
-<li><a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">Third Party Plugins</a></li>
-</ul>
+<p>If you spend some time to understand this now, it&rsquo;ll help you troubleshoot and better understand exactly what happens.</p>
 
+<pre><code>
+    cd octopress #the repo where you cloned octopress
+    git remote show origin
+
+    * remote origin
+    Fetch URL: https://github.com/aribajahan/aribajahan.github.io.git
+    Push  URL: https://github.com/aribajahan/aribajahan.github.io.git
+    HEAD branch: master
+    Remote branches:
+    master new (next fetch will store in remotes/origin)
+    source tracked
+    Local branch configured for 'git pull':
+    source merges with remote master
+    Local ref configured for 'git push':
+    source pushes to source (up to date)
+</code></pre>
+
+
+
+
+<pre><code>
+    cd octopress/_deploy/ #the repo within your source folder
+    git remote show origin
+
+    * remote origin
+    Fetch URL: https://github.com/aribajahan/aribajahan.github.io.git
+    Push  URL: https://github.com/aribajahan/aribajahan.github.io.git
+    HEAD branch: master
+    Remote branches:
+    master tracked
+    source tracked
+    Local ref configured for 'git push':
+    master pushes to master (up to date)
+</code></pre>
+
+
+<p>So now you can see exactly what repo is the <code>source</code> and <code>master</code> and where they push. They are the 2 separate branches of your github page main repo.</p>
 
 <br></br>
 
@@ -166,10 +205,12 @@ git push origin source</code></pre>
 
 <hr />
 
-<h3>Further Exploration:</h3>
+<h3>Further Troubleshooting:</h3>
 
 <ul>
-<li>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></li>
+<li><p>If you ever need to set up another computer to post to your existing blog, I&rsquo;d follow <a href="http://scottcheng.com/blog/2012/11/setting-up-existing-octopress-blog-on-a-new-computer/">this</a>, <a href="http://quibb.com/links/octopress-setting-up-a-blog-and-contributing-to-an-existing-one/view">this</a>, <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">this</a> or <a href="http://fernandomayer.github.io/blog/2013/03/02/configuring-octopress/">this</a></p></li>
+<li><p>If you ever lose the source to your blog, check out <a href="http://blog.pezholio.co.uk/2013/04/lost-the-source-to-my-octopress-blog-ooops/">his solution</a>.</p></li>
+<li><p>If you are interested in hosting your site on <a href="http://www.julianbonilla.com/blog/2012/11/05/octopress-on-amazon-s3/">Amazon 3</a>.</p></li>
 </ul>
 
 ]]></content>
@@ -177,17 +218,17 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[Create Your Own Octopress Blog]]></title>
-    <link href="http://aribajahan.github.io/blog/create-your-own-octopress-blog/"/>
+    <link href="http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog/"/>
     <updated>2014-05-09T00:57:04-04:00</updated>
-    <id>http://aribajahan.github.io/blog/create-your-own-octopress-blog</id>
-    <content type="html"><![CDATA[<p>Here is the thing, I never even knew what github was. To get over that, I decided I would learn not only learn github but launch an octopress blog. So here is how you can make yours.</p>
+    <id>http://aribajahan.github.io/blog/2014/05/09/create-your-own-octopress-blog</id>
+    <content type="html"><![CDATA[<p>To be honest, I never even knew what github was. To fix that, I decided to attempt launching an octopress blog. I also wasn&rsquo;t familiar with working on the command line either. After a few all nighters and breaking my own blog twice, this is my third version! Hah. So I figured to put this write up together to help give answers that I was searching for.</p>
 
-<p>Disclaimer: I had to rebuild this THREE times. So, definitely do not get discouraged (especially if you are a newbie, like me).</p>
+<p>Remember, if a newbie can rebuild this 3 times, you can definitely do this.</p>
 
 <!--more-->
 
 
-<h3>Workflow on Mac</h3>
+<h3>Workflow on a Mac</h3>
 
 <ol>
 <li>Open Terminal <em>(I suggest you place a shortcut to Terminal on your dock)</em></li>
@@ -325,8 +366,16 @@ bundle install</code></pre>
 <li><p>Make sure the default branch is set to master.</p></li>
 <li><p>Back on the terminal: <code>rake setup_github_pages</code></p></li>
 <li><p>When it prompts to add the link, make sure you add it in the form: <code>"http://username/username.github.io.git"</code></p></li>
-<li><p>It should end by telling you that you can now deploy to: &lsquo;<a href="https://github.com/aribajahan/aribajahan.github.io.git">https://github.com/aribajahan/aribajahan.github.io.git</a>&rsquo; with <code>rake deploy</code></p></li>
-<li><p>Then:</p></li>
+<li>It should end by telling you that you can now deploy to: &lsquo;<a href="https://github.com/aribajahan/aribajahan.github.io.git">https://github.com/aribajahan/aribajahan.github.io.git</a>&rsquo; with <code>rake deploy</code></li>
+</ul>
+
+
+<p>What did this just do? This code renames the imathis/octopress from <code>origin</code> to <code>source</code>, adds your Github page repo as the default <code>origin</code> remote and renames your <code>master</code> branch to <code>source</code>. Then it also creates the directory: <code>_deploy/</code> and makes a git repo there (this acts like the master on your local device). Lastly, it adds your Github repo as the default <code>origin</code> remote for this new repo.</p>
+
+<p>Now, everytime you do <code>rake generate</code> and <code>rake deploy</code>, the <code>master</code> branch that&rsquo;s in <code>_deploy/</code> is pushed to the <code>master</code> branch on your Github page repo. Then when you commit push to the <code>source</code> repo, it becomes the <code>source</code> branch of your Github page repo.</p>
+
+<ul>
+<li>Then:</li>
 </ul>
 
 
@@ -356,9 +405,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[The Product Hub]]></title>
-    <link href="http://aribajahan.github.io/blog/the-product-hub/"/>
+    <link href="http://aribajahan.github.io/blog/2014/05/03/the-product-hub/"/>
     <updated>2014-05-03T04:47:08-04:00</updated>
-    <id>http://aribajahan.github.io/blog/the-product-hub</id>
+    <id>http://aribajahan.github.io/blog/2014/05/03/the-product-hub</id>
     <content type="html"><![CDATA[<p>As I am continuously increasing my knowledgebase, I am curating resources and sharing them here. This way others can learn about product management and what it takes to successfully create innovative products in technology.</p>
 
 <!--more-->
@@ -476,9 +525,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[Reading List]]></title>
-    <link href="http://aribajahan.github.io/blog/reading-list/"/>
+    <link href="http://aribajahan.github.io/blog/2014/05/03/reading-list/"/>
     <updated>2014-05-03T00:38:16-04:00</updated>
-    <id>http://aribajahan.github.io/blog/reading-list</id>
+    <id>http://aribajahan.github.io/blog/2014/05/03/reading-list</id>
     <content type="html"><![CDATA[<p>The beauty of this world is that it&rsquo;s evergrowing with information. It&rsquo;s hard to even keep up being aware of it, let alone absorb it all. My goal is to curate and share my reading list. Then post quotes and learnings that were meaningful to me.</p>
 
 <!--more-->
@@ -548,9 +597,9 @@ git push origin source</code></pre>
   
   <entry>
     <title type="html"><![CDATA[How's NYC Math Education Holding Up These Days?]]></title>
-    <link href="http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days/"/>
+    <link href="http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days/"/>
     <updated>2014-04-25T04:26:50-04:00</updated>
-    <id>http://aribajahan.github.io/blog/hows-nyc-math-education-holding-up-these-days</id>
+    <id>http://aribajahan.github.io/blog/2014/04/25/hows-nyc-math-education-holding-up-these-days</id>
     <content type="html"><![CDATA[<p>An exploration in to the NYC Open Data.</p>
 
 <!--more-->
@@ -687,9 +736,9 @@ Then, I wanted to take a look at the NYC and borough breakdown of proficiency le
   
   <entry>
     <title type="html"><![CDATA[Hello World: Late Saturday Night]]></title>
-    <link href="http://aribajahan.github.io/blog/hello-world-saturday-night/"/>
+    <link href="http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night/"/>
     <updated>2014-04-06T03:46:38-04:00</updated>
-    <id>http://aribajahan.github.io/blog/hello-world-saturday-night</id>
+    <id>http://aribajahan.github.io/blog/2014/04/06/hello-world-saturday-night</id>
     <content type="html"><![CDATA[<p>It&rsquo;s 4 am and I&rsquo;m still trying to figure out how to work Github, Jekyll and Octopress.</p>
 
 <p>It&rsquo;s interesting how much more time I&rsquo;m willing to spend learning this &hellip; because it&rsquo;s an entire project.  I definitely think I&rsquo;m learning more this way than being on Codecademy.</p>
