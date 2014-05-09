@@ -6,13 +6,17 @@ comments: true
 categories: OpenData Socrata NYC Education Math
 ---
 
+An exploration in to the NYC Open Data. 
+
+<!--more-->
+
 ###So, this is how it started... 
 
 The other night, I was helping my cousin out with her math homework. While I love that our interaction has gone beyond her showing me her instagram photos, I wasn't so happy about the content that she was learning.  
 
 She is a sophomore in high school and she was struggling with basic trig that is usually covered in junior high school. We enjoyed some time reviewing all types of trig formulas and their relevance.
 
-<!--more-->
+
 
 When I was in the 7th grade (junior high school), I was doing 9th grade math. I was lucky to be at a junior high school that 1. even had advanced math 2. looked to provide that opportunity to many students and 3. cared about pushing our boundaries. That early exposure to math lead me to always seek out the impact math can have in other disciplines. In my case, it was the integration of Math and Biology that lead me to study as a Biomedical Engineer (focus on Biomechanics) in college.  
 

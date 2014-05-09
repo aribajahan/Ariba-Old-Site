@@ -5,6 +5,9 @@ date: 2014-05-03 04:47:08 -0400
 comments: true
 categories: product management pm ux
 ---
+As I am continuously increasing my knowledgebase, I am curating resources and sharing them here. This way others can learn about product management and what it takes to successfully create innovative products in technology. 
+
+<!--more--> 
 
 ###Product Books to read
 
@@ -24,7 +27,7 @@ categories: product management pm ux
 * [The Lean Startup](http://theleanstartup.com/book)
 * [The Four Steps to the Epiphany](http://www.amazon.com/Four-Steps-Epiphany-Steve-Blank/dp/0989200507?&tag=rnwap-20)
 * [The Black Swan](http://www.amazon.com/The-Black-Swan-Improbable-Fragility-ebook/dp/B00139XTG4/ref=r_sim_8)
-<!--more--> 
+
 
 #####Design & UX
 * [The Design of Everyday Things](http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107/ref=sr_1_1)

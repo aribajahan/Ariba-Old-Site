@@ -6,6 +6,9 @@ comments: true
 categories: readinglist entrepreneurship 
 ---
 
+The beauty of this world is that it's evergrowing with information. It's hard to even keep up being aware of it, let alone absorb it all. My goal is to curate and share my reading list. Then post quotes and learnings that were meaningful to me. 
+
+<!--more--> 
 
 ###Lean
 * [The Lean Startup](http://theleanstartup.com/book)
@@ -15,7 +18,6 @@ categories: readinglist entrepreneurship
 * [Lean UX](http://www.amazon.com/Lean-UX-Applying-Principles-Experience-ebook/dp/B0074KA0A4/ref=pd_sim_kstore_12?ie=UTF8&refRID=1HN6SX1PVNEDCDWQGGEC)
 * [The Lean Enterprise](http://www.amazon.com/Lean-Enterprise-Corporations-Innovate-Startups-ebook/dp/B00J0VZS16/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1399094147&sr=1-1&keywords=lean+enterprise)
 
-<!--more--> 
 
 * [Imagine: How Creativity Works - Neuroscience is the new Freakonomics](http://www.amazon.com/Imagine-Creativity-Works-Jonah-Lehrer-ebook/dp/B005MZN1HC/ref=sr_1_1?s=books&ie=UTF8&qid=1399092318&sr=1-1&keywords=imagine)
 * [Freakonomics](http://www.amazon.com/Freakonomics-Rev-Ed-Riddles-Modern-ebook/dp/B000MAH66Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1399094251&sr=1-1&keywords=freakonomics)
