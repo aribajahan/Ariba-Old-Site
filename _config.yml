@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: aribajahan.github.io
+url: http://aribajahan.com
 title: Ariba Jahan
 subtitle: Oh Synapse
 author: Ariba Jahan
@@ -103,7 +103,7 @@ disqus_show_comment_count: true
 
 
 # Google Analytics
-google_analytics_tracking_id: UA-49774879-1
+google_analytics_tracking_id: UA-50845213-1
 
 # Facebook Like
 facebook_like: true
