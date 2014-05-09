@@ -4,7 +4,7 @@
   <title><![CDATA[Ariba Jahan]]></title>
   <link href="http://aribajahan.com/atom.xml" rel="self"/>
   <link href="http://aribajahan.com/"/>
-  <updated>2014-05-09T16:14:15-04:00</updated>
+  <updated>2014-05-09T19:29:33-04:00</updated>
   <id>http://aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
@@ -26,7 +26,7 @@
 <p>First customize the content:<br/>
 * Review and modify these <a href="http://octopress.org/docs/blogging/">options</a> <br/>
 * Basic and simple <a href="http://octopress.org/docs/configuring/">configurations</a><br/>
-* Create a custom <a href="http://robdodson.me/blog/2012/04/30/custom-domain-with-octopress-and-github-pages/">CNAME</a></p>
+* Create a custom <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records">CNAME</a></p>
 
 <p>Even though Octopress installs the default theme, it&rsquo;s easy to create your own changes or install 3rd party themes.    <br/>
 * Here are the fields you can edit and customize the <a href="http://octopress.org/docs/theme/template/">theme</a><br/>
