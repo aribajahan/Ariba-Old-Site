@@ -3,20 +3,19 @@
   top: 0;
   width: 100%;
   background-attachment: scroll;
-  background-webkit-filter: grayscale(100%) contrast(150%); 
   background-clip: border-box;
   background-color: #323232;
-  background-image: url("/images/background.jpg");
+  background-image: url("/images/background4.jpg");
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: repeat;
   background-size: cover;
   margin: 0px;
-  padding: 350px 100px;
+  padding: 300px 0px;
   z-index: -1;
-  height: 730px;
+  height: 720px;
   text-align: center;
-  color: white;
+  color: #d92478;
 
 
 
@@ -30,22 +29,23 @@
     border: 2px solid #eee;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
-    background: url(/images/headshot.jpg) no-repeat;
+    background: url(/images/headshot3.jpg) no-repeat;
+    -webkit-filter: contrast(100%);
     background-size: 80px;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    opacity: .8;
-
+    opacity: .9;
   }
 
 
   .social-icon-list-hero a {
+  margin: 45px;
   background-color: white;
   opacity: 5;
 
   &:hover {
-  background-color: #d92478;
+  background-color: #E61089;
     opacity: 5;
   }
 }
@@ -53,11 +53,12 @@
   > h1 {
     font-weight: 700;
     font-style: normal;
-    font-size: 76px;
+    font-size: 70px;
     line-height: 1;
     margin-bottom: 10px;
     outline: 0;
     word-break: break-word;
+    color: #E61089;
   }
 
 //this h1 is where my name is. 
@@ -66,13 +67,14 @@
     letter-spacing: .01rem;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 18px;
+    color: #8F8D8E;
     //this p is the description under my name
   }
 }
 
 .home-page {
-  margin-top: 730px;
+  margin-top: 700px;
 }
 
 //This is the margin between the black home and About Me section
