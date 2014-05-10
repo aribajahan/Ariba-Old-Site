@@ -1,6 +1,7 @@
 ---
 layout: default
 single: true
+sharing: true
 ---
 
 <article role="article" class="full-single-article">
@@ -15,6 +16,11 @@ single: true
         {{ content }}
 
         <hr class="divider-short"/>
+        
+        {% unless page.sharing == false %}
+        {% include post/sharing.html %}
+        {% endunless %}
+
         
         {% if site.disqus_short_name and page.comments == true %}
         <section>

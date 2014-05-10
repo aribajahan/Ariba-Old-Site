@@ -50,7 +50,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/twitter.html, asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -68,6 +68,7 @@ github_repo_count: 2
 github_show_profile_link: true
 github_skip_forks: true
 
+
 #Linkedin
 linkedin_user: aribajahan
 
@@ -75,9 +76,14 @@ linkedin_user: aribajahan
 email: ariba.jahan@gmail.com
 
 
+sharing: true
+
 # Twitter
 twitter_user: aribajahan
 twitter_tweet_button: true
+twitter_follow_button: true
+twitter_tweet_count: true
+
 
 # Google +1
 google_plus_one: true
@@ -107,3 +113,4 @@ google_analytics_tracking_id: UA-50845213-1
 
 # Facebook Like
 facebook_like: true
+facebook_user: Ariba.S.J.
