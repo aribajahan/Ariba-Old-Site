@@ -5,7 +5,7 @@
   background-attachment: scroll;
   background-clip: border-box;
   background-color: #323232;
-  background-image: url("/images/background4.jpg");
+  background-image: url("/images/background5.jpg");
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: repeat;
@@ -23,7 +23,7 @@
     display: block;
     width: 80px;
     height: 80px;
-    margin-left: auto;
+    margin-left: 670px;
     margin-right: auto;
     border-radius: 40px;
     border: 2px solid #eee;
@@ -66,11 +66,11 @@
 
   > p {
     letter-spacing: .01rem;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    font-size: 19px;
-    color: #CCC4C8;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 21px;
+    color: #A8A2A5;
+    text-shadow: black 0.1em 0.1em 0.1em;
     //this p is the description under my name
   }
 }
