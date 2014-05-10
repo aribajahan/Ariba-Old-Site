@@ -4,13 +4,13 @@
   width: 100%;
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: #323232;
+  background-color: black;
   background-image: url("/images/background5.jpg");
   background-origin: padding-box;
-  background-position: 0 0;
+  background-position: center;
   background-repeat: repeat;
-  background-size: cover;
-  margin: 0px;
+  background-size: 130%;
+  margin: 0;
   padding: 300px 0px;
   z-index: -1;
   height: 750px;
@@ -21,31 +21,31 @@
 
   .headshot {
     display: block;
-    width: 80px;
-    height: 80px;
-    margin-left: 670px;
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
     border: 2px solid #eee;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     background: url(/images/headshot2.jpg) no-repeat;
-    -webkit-filter: contrast(100%);
+    -webkit-filter: contrast(120%);
     background-size: 80px;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    opacity: .9;
+    opacity: 0.8;
   }
 
 
   .social-icon-list-hero a {
-  margin: 45px;
+  margin: 50px;
   background-color: white;
   opacity: 5;
 
   &:hover {
-  background-color: #E61089;
+  background-color: #260A8C;
     opacity: 5;
   }
 }
@@ -58,19 +58,19 @@
     margin-bottom: 10px;
     outline: 0;
     word-break: break-word;
-    color: #E61089;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.25em;
   }
 
 //this h1 is where my name is. 
 
   > p {
     letter-spacing: .01rem;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     font-size: 25px;
-    color: #4023A8;
-    text-shadow: black 0.05em 0.05em 0.15em;
+    color: #E61089;
+    text-shadow: black 0.1em 0.1em 0.2em;
     
     //this p is the description under my name
   }
