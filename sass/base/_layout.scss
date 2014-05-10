@@ -13,7 +13,7 @@
   margin: 0px;
   padding: 300px 0px;
   z-index: -1;
-  height: 720px;
+  height: 750px;
   text-align: center;
   color: #d92478;
 
@@ -66,17 +66,18 @@
 
   > p {
     letter-spacing: .01rem;
-    font-weight: 400;
+    font-weight: 550;
     font-style: normal;
-    font-size: 21px;
-    color: #A8A2A5;
-    text-shadow: black 0.1em 0.1em 0.1em;
+    font-size: 25px;
+    color: #4023A8;
+    text-shadow: black 0.05em 0.05em 0.15em;
+    
     //this p is the description under my name
   }
 }
 
 .home-page {
-  margin-top: 700px;
+  margin-top: 750px;
 }
 
 //This is the margin between the black home and About Me section
