@@ -59,16 +59,18 @@
     outline: 0;
     word-break: break-word;
     color: #E61089;
+    text-shadow: black 0.1em 0.1em 0.2em;
   }
 
 //this h1 is where my name is. 
 
   > p {
     letter-spacing: .01rem;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size: 18px;
-    color: #8F8D8E;
+    font-size: 19px;
+    color: #CCC4C8;
+    text-shadow: black 0.1em 0.1em 0.2em;
     //this p is the description under my name
   }
 }
