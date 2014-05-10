@@ -3,6 +3,7 @@
   top: 0;
   width: 100%;
   background-attachment: scroll;
+  background-webkit-filter: grayscale(100%) contrast(150%); 
   background-clip: border-box;
   background-color: #323232;
   background-image: url("/images/background.jpg");
@@ -11,18 +12,50 @@
   background-repeat: repeat;
   background-size: cover;
   margin: 0px;
-  padding: 370px 100px;
+  padding: 350px 100px;
   z-index: -1;
   height: 730px;
   text-align: center;
   color: white;
 
+
+
+  .headshot {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    border: 2px solid #eee;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    background: url(/images/headshot.jpg) no-repeat;
+    background-size: 80px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    opacity: .8;
+
+  }
+
+
+  .social-icon-list-hero a {
+  background-color: white;
+  opacity: 5;
+
+  &:hover {
+  background-color: #d92478;
+    opacity: 5;
+  }
+}
+
   > h1 {
     font-weight: 700;
     font-style: normal;
-    font-size: 74px;
+    font-size: 76px;
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     outline: 0;
     word-break: break-word;
   }
@@ -49,7 +82,9 @@
   background: white;
   border-top: 1px solid #f2f2f0;
   border-bottom: 1px solid #f2f2f0;
-  padding: 12px 0px;
+  padding: 0px 0px;
+
+//this is the article and about me area
 
   h4 {
     font-weight: 700;
@@ -66,17 +101,18 @@
 
 .article-list {
   background-color: white;
-  padding-top: 60px;
+  padding-top: 0px;
+
 
   article {
     padding-bottom: 30px;
-
     .full-article-link {
       font-size: 14px;
     }
 
     h2 > a {
       color: #260A8C;
+      text-align: center;
       font-weight: 600;
       font-style: normal;
       line-height: 1.2;
@@ -174,6 +210,7 @@ article {
 .home-field {
   background-color: white;
 
+  
   #about-me {
     margin-bottom: 10px;
     color:#505959;
