@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  color: black;
   background-attachment: scroll;
   background-clip: border-box;
   background-color: black;
@@ -9,9 +10,9 @@
   background-origin: padding-box;
   background-position: center;
   background-repeat: repeat;
-  background-size: 130%;
+  background-size: 125%;
   margin: 0;
-  padding: 300px 0px;
+  padding: 350px 0px;
   z-index: -1;
   height: 750px;
   text-align: center;
@@ -21,12 +22,13 @@
 
   .headshot {
     display: block;
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
+    position: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     background: url(/images/headshot2.jpg) no-repeat;
@@ -35,17 +37,17 @@
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
 
   .social-icon-list-hero a {
-  margin: 50px;
-  background-color: white;
-  opacity: 5;
+  margin: 90px;
+  background-color: black;
+  opacity: 0.8;
 
   &:hover {
-  background-color: #260A8C;
+  background-color: #d92478;
     opacity: 5;
   }
 }
@@ -155,10 +157,10 @@ article {
       line-height: 3.0;
   }
   .commentsection{
-      color: #260A8C;
-      font-weight: 800;
+      color: black;
+      font-weight: 500;
       font-style: normal;
-      font-size: 26px;
+      font-size: 20px;
   }
     
   p {
@@ -192,10 +194,13 @@ article {
 }
 
 .social-icon-list a {
-  opacity: 0.3;
+  background-color: #260A8C;
+  opacity: 5;
+
 
   &:hover {
-    opacity: 0.6;
+  background-color: #E61089;
+    opacity: 5;
   }
 }
 
