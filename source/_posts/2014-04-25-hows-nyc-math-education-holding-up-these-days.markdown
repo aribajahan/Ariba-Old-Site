@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How's NYC Math Education holding up these days?"
+title: "Exploring NYC Math Education"
 date: 2014-04-25 04:26:50 -0400
 comments: true
 categories: OpenData Socrata NYC Education Math
