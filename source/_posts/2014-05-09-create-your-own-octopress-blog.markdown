@@ -118,4 +118,6 @@ git push origin source</code></pre>
 
 Next, let's make the blog feel more like you. 
 
+This is a great [Tutorial](http://webdesign.tutsplus.com/tutorials/getting-started-with-octopress--webdesign-11442).
+
 
