@@ -4,7 +4,7 @@
   <title><![CDATA[Ariba Jahan]]></title>
   <link href="http://aribajahan.com/atom.xml" rel="self"/>
   <link href="http://aribajahan.com/"/>
-  <updated>2014-05-11T23:00:37-04:00</updated>
+  <updated>2014-05-12T01:01:10-04:00</updated>
   <id>http://aribajahan.com/</id>
   <author>
     <name><![CDATA[Ariba Jahan]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Invest]]></title>
+    <link href="http://aribajahan.com/blog/invest/"/>
+    <updated>2014-05-12T00:51:58-04:00</updated>
+    <id>http://aribajahan.com/blog/invest</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h4>INVEST</h4>
+
+<p>&hellip;.not just in your passions, but <strong>honing your skills</strong>. <br/>
+&hellip;.not just in the relationships in your life, but to <strong>new dynamics</strong>. <br/>
+&hellip;.not just with your time, but with your <strong>deliberate attention</strong>.<br/>
+&hellip;.not just to being productive, but being <strong>impactful</strong>.<br/>
+&hellip;.not just to physical attributions, but to your <strong>health and mental peace</strong>.<br/>
+&hellip;.not just to being perseverant, but being compassionate. not just with money, but with <strong>genuine support</strong>.<br/>
+&hellip;.not just in giving a &ldquo;piece of your mind&rdquo;, but in giving a <strong>piece of your heart</strong>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Customize Your Octopress]]></title>
@@ -418,6 +438,8 @@ git push origin source</code></pre>
 
 
 <p>Next, let&rsquo;s make the blog feel more like you.</p>
+
+<p>This is a great <a href="http://webdesign.tutsplus.com/tutorials/getting-started-with-octopress--webdesign-11442">Tutorial</a>.</p>
 ]]></content>
   </entry>
   
