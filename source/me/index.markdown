@@ -1,18 +1,26 @@
 ---
 layout: page
-title: "me"
+title: "About Ariba"
 date: 2014-05-11 04:08
 comments: true
 sharing: true
 footer: true
 ---
-My world right now: Python, exploring APIs, product development, creating keto recipes & staying healthy. 
-    
-    There's so much to read and learn in this lifetime. Making lists are not helping. So, I'm holding myself accountable to these GOALS: 
-        Do 2 projects a month. That is exactly how this blog came to be! This was a weekend project in April 2014.
-        Reading about 2 books/ month. Plan on sharing my list and learnings here.
-        Blog on a regular basis to share what I'm learning and doing.
 
-I mainly think about food. But, I'll try my best to share my other fascinations. No promises.
-  
-What I try to live by: Fear Less. Test Often. Learn Always.
+#####My world right now: 
+* understanding product market and behavior. 
+* exploring APIs to see what stories they hold. 
+* learning Python. 
+* creating Keto recipes. 
+* working out more often to become stronger. 
+
+####Why am I making this? 
+* to conquer github work flow
+* to hold myself accountable to all the goals I have by making sure I share it here
+* to share what I am learning & how I'm applying it
+
+
+
+
+
+
