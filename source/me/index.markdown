@@ -7,6 +7,8 @@ sharing: true
 footer: true
 ---
 
+
+
 ####My world right now: 
 * understanding product market and behavior. 
 * exploring APIs to see what stories they hold. 
