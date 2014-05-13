@@ -41,8 +41,8 @@
         <lastmod>2014-05-12T00:59:59-04:00</lastmod>
     </url>
     <url>
-        <loc>http://aribajahan.com/me/page.html</loc>
-        <lastmod>2014-05-13T04:09:49-04:00</lastmod>
+        <loc>http://aribajahan.com/me.html</loc>
+        <lastmod>2014-05-13T05:03:56-04:00</lastmod>
     </url>
     <url>
         <loc>http://aribajahan.com/posts/</loc>
@@ -51,5 +51,9 @@
     <url>
         <loc>http://aribajahan.com/robots.txt</loc>
         <lastmod>2014-05-02T15:18:06-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aribajahan.com/snapshots.html</loc>
+        <lastmod>2014-05-13T04:22:14-04:00</lastmod>
     </url>
 </urlset>
