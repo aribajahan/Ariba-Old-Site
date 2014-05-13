@@ -10,11 +10,11 @@
   background-origin: padding-box;
   background-position: center;
   background-repeat: repeat;
-  background-size: 100%;
+  background-size: 140%;
   margin: 0;
-  padding: 328px 0px;
+  padding: 320px 0px;
   z-index: -1;
-  height: 750px;
+  height: 780px;
   text-align: center;
   color: #d92478;
 
@@ -37,7 +37,7 @@
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    opacity: 0.9;
+    opacity: 3;
   }
 
 
@@ -53,9 +53,9 @@
 }
 
   > h1 {
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1;
     margin-bottom: 10px;
     outline: 0;
@@ -68,10 +68,10 @@
 
   > p {
     letter-spacing: .01rem;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 23px;
-    color: #E61089;
+    font-size: 22px;
+    color: #d92478;
     text-shadow: black 0.1em 0.1em 0.1em;
     
     //this p is the description under my name
@@ -79,7 +79,7 @@
 }
 
 .home-page {
-  margin-top: 750px;
+  margin-top: 780px;
 }
 
 //This is the margin between the black home and About Me section
@@ -139,7 +139,7 @@
 article {
   .meta {
     color: #b3b3b1;
-    font-size: 12px;
+    font-size: 13px;
 
     a {
       color: #b3b3b1;
@@ -148,14 +148,17 @@ article {
 }
 
 .full-single-article {
-  padding-top: 30px;
+  padding-top: 85px;
   h1{
       color: #260A8C;
-      font-weight: 900;
-      font-size: 58px;
-      font-style: bold;
-      line-height: 3.0;
+      font-weight: 700;
+      font-size: 50px;
+      font-style: normal;
+      line-height: 1.1;
+      margin-bottom: 10px;
   }
+
+  
   .commentsection{
       color: black;
       font-weight: 500;
@@ -199,7 +202,7 @@ article {
 
 
   &:hover {
-  background-color: #E61089;
+  background-color: #d92478;
     opacity: 5;
   }
 }
@@ -236,8 +239,8 @@ article {
 .archive-link {
   text-align: center;
   padding-bottom: 40px;
-  a:link {color:#4a4949};
-  a:hover {color:#D1176e};
+  a:link {color:#b3b3b1};
+  a:hover {color:#d92478};
 
   h* {
     padding: 0px;
@@ -273,3 +276,41 @@ article {
     text-transform: none;
   }
 }
+
+
+.MyName{
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: .1em;
+    color: #260A8C;
+    }
+
+.AboutMeHeadshot{
+    display: block;
+    width: 160px;
+    height: 160px;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    background: url(/images/AboutHeader.jpeg) no-repeat;
+    -webkit-filter: contrast(100%);
+    background-size: 160px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    opacity: 3;
+    }
+
+.col-md-6 col-md-offset-4{
+  color: black;
+  margin-top:80px;
+}
+
