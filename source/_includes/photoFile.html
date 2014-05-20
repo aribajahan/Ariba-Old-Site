@@ -1,0 +1,60 @@
+.hero {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: black;
+  background-image: url("/images/backgroundsana.jpg");
+  background-origin: padding-box;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 140%;
+  margin: 0;
+  padding: 320px 0px;
+  z-index: -1;
+  height: 780px;
+  text-align: center;
+  color: #d92478;
+
+  .home-page {
+  margin-top: 780px;
+
+
+  .postmeta {
+    color: #b3b3b1;
+    font-size: 13px;
+    }
+
+
+
+
+.home-icon {
+  position: fixed;
+  top: 7px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  z-index: 700;
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+
+  img {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin-top: 4px;
+  }
+}
+
+
+
+  <div id="photoDiv"><img alt='' src="{{ page.image }}" width="{{ page.photoWidth }}" height="{{ page.photoHeight }}"></div>
++    <div class="entry-content">
++      <h1 class="entry-title">{{ page.title }}</h1>
++      <div id="photoInfoDiv">
++        <div id="photoDescriptionDiv">{{ content }}</div>
++        <div id="photoExifDiv">
++          <table>

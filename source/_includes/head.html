@@ -2,10 +2,20 @@
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html prefix="og: http://ogp.me/ns#">
+
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
+
+
+  <meta property="og:title" content="Ariba Jahan" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="http://www.aribajahan.com" />
+  <meta property="og:image" content="/images/ogp_bkg.png" />
+
+
 
   {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">

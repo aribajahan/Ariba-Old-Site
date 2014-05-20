@@ -4,7 +4,12 @@ title: "Invest"
 date: 2014-05-12 00:51:58 -0400
 comments: true
 categories: 
+image: backgroundsana.jpg
+
 ---
+
+
+
 <!--more-->
 ####INVEST 
 ....not just in your passions, but __honing your skills__.   
